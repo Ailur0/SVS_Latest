@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Core brand colors from SVS logo */
+    --svs-blue: 211 100% 50%;     /* #007BFF */
+    --svs-red: 354 70% 53%;       /* #DC3545 */
+    --svs-purple: 261 50% 51%;    /* #6F42C1 */
+    
+    /* Base colors */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 20%;
+    
+    /* Primary - SVS Blue */
+    --primary: 211 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 211 100% 95%;
+    --primary-dark: 211 100% 40%;
+    
+    /* Secondary - SVS Red */
+    --secondary: 354 70% 53%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-light: 354 70% 95%;
+    
+    /* Accent - SVS Purple */
+    --accent: 261 50% 51%;
+    --accent-foreground: 0 0% 100%;
+    --accent-light: 261 50% 95%;
+    
+    /* Neutral colors */
+    --muted: 0 0% 97%;
+    --muted-foreground: 0 0% 45%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 20%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 20%;
+    
+    --destructive: 354 70% 53%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 0 0% 91%;
+    --input: 0 0% 91%;
+    --ring: 211 100% 50%;
+    
+    --radius: 0.5rem;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(211 100% 50%), hsl(211 100% 60%));
+    --gradient-hero: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 100%);
+    --gradient-cta: linear-gradient(135deg, hsl(261 50% 51%), hsl(261 50% 61%));
+    
+    /* Shadows */
+    --shadow-soft: 0 2px 8px rgba(0, 0, 0, 0.08);
+    --shadow-medium: 0 4px 16px rgba(0, 0, 0, 0.12);
+    --shadow-large: 0 8px 32px rgba(0, 0, 0, 0.16);
+  }
+
+  .dark {
+    /* Core brand colors remain consistent */
+    --svs-blue: 211 100% 50%;
+    --svs-red: 354 70% 53%;
+    --svs-purple: 261 50% 51%;
+    
+    --background: 0 0% 10%;
+    --foreground: 0 0% 95%;
+    
+    --primary: 211 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 211 100% 20%;
+    --primary-dark: 211 100% 60%;
+    
+    --secondary: 354 70% 53%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-light: 354 70% 20%;
+    
+    --accent: 261 50% 51%;
+    --accent-foreground: 0 0% 100%;
+    --accent-light: 261 50% 20%;
+    
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
+    
+    --card: 0 0% 13%;
+    --card-foreground: 0 0% 95%;
+    
+    --popover: 0 0% 13%;
+    --popover-foreground: 0 0% 95%;
+    
+    --destructive: 354 70% 53%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 211 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}

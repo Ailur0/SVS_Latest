@@ -1,4 +1,5 @@
 import Header from '@/components/layout/Header';
+import UgadiGreeting from '@/components/UgadiGreeting';
 import Footer from '@/components/layout/Footer';
 import HeroSection from '@/components/home/HeroSection';
 import ProductsSection from '@/components/home/ProductsSection';
@@ -11,6 +12,7 @@ import { Link } from 'react-router-dom';
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <UgadiGreeting />
       <Header />
       <main>
         <HeroSection />

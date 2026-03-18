@@ -3,6 +3,7 @@ import Footer from '@/components/layout/Footer';
 import { Card, CardContent } from '@/components/ui/card';
 import { Users, Target, Lightbulb, Heart } from 'lucide-react';
 import { ScrollAnimation } from '@/components/ui/scroll-animation';
+import PageHeader from '@/components/ui/page-header';
 
 const About = () => {
   const values = [
@@ -32,19 +33,10 @@ const About = () => {
     <div className="min-h-screen bg-background">
       <Header />
       <main className="pt-20">
-        {/* Hero Banner */}
-        <section className="bg-gradient-primary py-20">
-          <div className="container mx-auto px-4">
-            <ScrollAnimation animation="fade-up">
-              <h1 className="font-heading text-4xl md:text-5xl font-bold text-white text-center">
-                About SVS Polymer Industries
-              </h1>
-            </ScrollAnimation>
-          </div>
-        </section>
+        <PageHeader title="About SVS Polymer Industries" />
 
         {/* Company Story */}
-        <section className="py-20">
+        <section className="py-12">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="font-heading text-3xl font-bold text-foreground mb-6">
@@ -52,22 +44,20 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  Founded in 2000, SVS Polymer Industries began as a small manufacturing unit
-                  with a vision to revolutionize the plastic packaging industry. Over the years,
-                  we have grown into one of the region's most trusted manufacturers of high-quality
-                  plastic buckets and containers.
+                  Founded in 2020, SVS Polymer Industries was established with a clear focus:
+                  to deliver reliable, high-quality rigid plastic packaging to brands that demand
+                  consistency, compliance, and shelf-ready performance.
                 </p>
                 <p>
-                  Our journey has been marked by continuous innovation, unwavering commitment to
-                  quality, and a deep understanding of our customers' needs. From serving local
-                  paint manufacturers to partnering with multinational food processing companies,
-                  we have consistently delivered products that meet the highest standards.
+                  In six years, we have built a trusted reputation across the paint, food grade,
+                  and lubricants sectors, serving 200+ customers across India. Our growth has been
+                  driven by a simple commitment — do the job right, every time.
                 </p>
                 <p>
-                  Today, with state-of-the-art manufacturing facilities and a team of dedicated
-                  professionals, we produce millions of containers annually, serving diverse
-                  industries across the country. Our success is built on the foundation of trust,
-                  quality, and the relationships we've cultivated with our clients.
+                  Today, with a modern manufacturing facility and a quality-first team, we
+                  produce containers across a wide range of capacities and closure types, tailored
+                  to the specific requirements of each customer. Our success is built on the
+                  foundation of trust, precision, and long-term partnerships.
                 </p>
               </div>
             </div>
@@ -75,7 +65,7 @@ const About = () => {
         </section>
 
         {/* Values */}
-        <section className="py-20 bg-muted">
+        <section className="py-12 bg-muted">
           <div className="container mx-auto px-4">
             <h2 className="font-heading text-3xl font-bold text-foreground text-center mb-12">
               Our Values & Vision
@@ -106,7 +96,7 @@ const About = () => {
         </section>
 
         {/* Manufacturing Philosophy */}
-        <section className="py-20">
+        <section className="py-12">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="font-heading text-3xl font-bold text-foreground mb-6">

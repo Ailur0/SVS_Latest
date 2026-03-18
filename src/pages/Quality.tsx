@@ -4,6 +4,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { CheckCircle, Award, Shield, FileCheck } from 'lucide-react';
 import qualityLab from '@/assets/quality-lab.jpg';
 import { ScrollAnimation } from '@/components/ui/scroll-animation';
+import PageHeader from '@/components/ui/page-header';
 
 const Quality = () => {
   const certifications = [
@@ -44,19 +45,10 @@ const Quality = () => {
     <div className="min-h-screen bg-background">
       <Header />
       <main className="pt-20">
-        {/* Hero Banner */}
-        <section className="bg-gradient-primary py-20">
-          <div className="container mx-auto px-4">
-            <ScrollAnimation animation="fade-up">
-              <h1 className="font-heading text-4xl md:text-5xl font-bold text-white text-center">
-                Our Commitment to Quality
-              </h1>
-            </ScrollAnimation>
-          </div>
-        </section>
+        <PageHeader title="Our Commitment to Quality" subtitle="Every product undergoes rigorous testing before it leaves our facility." />
 
         {/* Introduction */}
-        <section className="py-20">
+        <section className="py-12">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <p className="text-lg text-muted-foreground mb-8">
@@ -75,7 +67,7 @@ const Quality = () => {
         </section>
 
         {/* Certifications */}
-        <section className="py-20 bg-muted">
+        <section className="py-12 bg-muted">
           <div className="container mx-auto px-4">
             <h2 className="font-heading text-3xl font-bold text-foreground text-center mb-12">
               Certifications & Standards
@@ -106,7 +98,7 @@ const Quality = () => {
         </section>
 
         {/* Testing Procedures */}
-        <section className="py-20">
+        <section className="py-12">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
@@ -138,7 +130,7 @@ const Quality = () => {
         </section>
 
         {/* Quality Assurance Process */}
-        <section className="py-20 bg-muted">
+        <section className="py-12 bg-muted">
           <div className="container mx-auto px-4">
             <h2 className="font-heading text-3xl font-bold text-foreground text-center mb-12">
               Our Quality Assurance Process

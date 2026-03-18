@@ -2,80 +2,67 @@ import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { ScrollAnimation } from '@/components/ui/scroll-animation';
-import paintBucket from '@/assets/paint-bucket.jpg';
-import foodBucket from '@/assets/food-bucket.jpg';
-import industrialBucket from '@/assets/industrial-bucket.jpg';
-import customBuckets from '@/assets/custom-buckets.jpg';
+
+const categories = [
+  {
+    title: 'Paint Containers',
+    description: 'Distemper and paint packaging from 100gm to 20kg with flat lid and CCD closure options.',
+    image: '/Paint/20kg-distemper-ccd.jpg',
+    link: '/products?category=paint',
+  },
+  {
+    title: 'Food Grade',
+    description: 'BPA-free, food-safe round containers from 100ml to 10kg for dairy, oils, and FMCG.',
+    image: '/Food Grade/MRJ_10kg-round.jpg',
+    link: '/products?category=food',
+  },
+  {
+    title: 'Lubricants',
+    description: 'HDPE containers with flat and spout closures for engine oils and industrial lubricants.',
+    image: '/Lubricants/ML 20_Spout.jpg',
+    link: '/products?category=lubricants',
+  },
+];
 
 const ProductsSection = () => {
-  const products = [
-    {
-      title: 'Paint Buckets',
-      description: 'Premium quality containers for paint and coating applications',
-      image: paintBucket,
-      link: '/products?category=paint',
-    },
-    {
-      title: 'Food Grade',
-      description: 'Safe and certified containers for food and dairy products',
-      image: foodBucket,
-      link: '/products?category=food',
-    },
-    {
-      title: 'Industrial',
-      description: 'Heavy-duty buckets for grease, chemicals, and industrial use',
-      image: industrialBucket,
-      link: '/products?category=industrial',
-    },
-    {
-      title: 'Custom Solutions',
-      description: 'Tailored packaging solutions with your branding',
-      image: customBuckets,
-      link: '/customization',
-    },
-  ];
-
   return (
-    <section className="py-24 bg-background">
+    <section className="py-12 bg-background">
       <div className="container mx-auto px-4">
         <ScrollAnimation animation="fade-up" className="text-center mb-16">
           <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold mb-4">
             OUR PRODUCTS
           </span>
           <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Comprehensive Packaging Solutions
+            Packaging for Every Sector
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Industry-leading plastic containers engineered for diverse applications 
-            with customization capabilities to match your brand identity.
+            Shelf-ready, tamper-safe, high-volume rigid plastic packaging — designed for performance and compliance across industries.
           </p>
         </ScrollAnimation>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {products.map((product, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {categories.map((cat, index) => (
             <ScrollAnimation
-              key={product.title}
+              key={cat.title}
               animation="fade-up"
               delay={index * 100}
             >
               <Card className="group hover:shadow-large transition-all duration-300 hover:-translate-y-1 h-full">
                 <CardHeader className="p-0">
-                  <div className="aspect-square overflow-hidden rounded-t-lg">
+                  <div className="aspect-[4/3] overflow-hidden rounded-t-lg bg-muted">
                     <img
-                      src={product.image}
-                      alt={product.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      src={cat.image}
+                      alt={cat.title}
+                      className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                 </CardHeader>
                 <CardContent className="p-6">
-                  <CardTitle className="text-xl mb-2">{product.title}</CardTitle>
-                  <CardDescription className="mb-4">
-                    {product.description}
-                  </CardDescription>
-                  <Link to={product.link}>
+                  <CardTitle className="text-xl mb-2">{cat.title}</CardTitle>
+                  <CardDescription className="mb-4">{cat.description}</CardDescription>
+                  <Link to={cat.link}>
                     <Button variant="link" className="p-0 h-auto font-semibold">
-                      Learn More →
+                      View Products →
                     </Button>
                   </Link>
                 </CardContent>

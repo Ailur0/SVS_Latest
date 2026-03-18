@@ -6,12 +6,17 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Mail, Phone, MapPin, Clock } from 'lucide-react';
+import { Mail, Phone, MapPin, Loader2, CheckCircle } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import { ScrollAnimation } from '@/components/ui/scroll-animation';
+import PageHeader from '@/components/ui/page-header';
+
+const WEB3FORMS_KEY = import.meta.env.VITE_WEB3FORMS_KEY as string | undefined;
 
 const Contact = () => {
   const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     company: '',
@@ -20,19 +25,43 @@ const Contact = () => {
     message: '',
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: 'Message sent successfully!',
-      description: 'We will get back to you within 24 hours.',
-    });
-    setFormData({
-      name: '',
-      company: '',
-      email: '',
-      phone: '',
-      message: '',
-    });
+    setIsSubmitting(true);
+
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_KEY,
+          subject: `Contact Enquiry from ${formData.name} – SVS Polymer Industries`,
+          from_name: formData.name,
+          ...formData,
+        }),
+      });
+
+      const data = await res.json();
+
+      if (data.success) {
+        setSubmitted(true);
+        setFormData({ name: '', company: '', email: '', phone: '', message: '' });
+      } else {
+        toast({
+          title: 'Failed to send',
+          description: 'Please try again or reach us directly at svspolymerinds@gmail.com',
+          variant: 'destructive',
+        });
+      }
+    } catch {
+      toast({
+        title: 'Network error',
+        description: 'Please check your connection and try again.',
+        variant: 'destructive',
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -46,17 +75,10 @@ const Contact = () => {
     <div className="min-h-screen bg-background">
       <Header />
       <main className="pt-20">
-        {/* Hero Banner */}
-        <section className="bg-gradient-primary py-20">
-          <div className="container mx-auto px-4">
-            <h1 className="font-heading text-4xl md:text-5xl font-bold text-white text-center">
-              Get in Touch
-            </h1>
-          </div>
-        </section>
+        <PageHeader title="Get in Touch" subtitle="Reach out with your enquiry and we'll respond promptly." />
 
         {/* Contact Section */}
-        <section className="py-20">
+        <section className="py-12">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               {/* Contact Form */}
@@ -64,69 +86,95 @@ const Contact = () => {
                 <h2 className="font-heading text-2xl font-bold text-foreground mb-6">
                   Send us a Message
                 </h2>
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+                {submitted ? (
+                  <div className="flex flex-col items-center justify-center py-16 text-center">
+                    <CheckCircle className="h-16 w-16 text-emerald-500 mb-4" />
+                    <h3 className="font-heading text-xl font-bold text-foreground mb-2">Message Sent!</h3>
+                    <p className="text-muted-foreground mb-6">
+                      Thanks for reaching out. We'll get back to you within 24 hours.
+                    </p>
+                    <Button variant="outline" onClick={() => setSubmitted(false)}>
+                      Send Another Message
+                    </Button>
+                  </div>
+                ) : (
+                  <form onSubmit={handleSubmit} className="space-y-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                      <div>
+                        <Label htmlFor="name">Name <span className="text-destructive">*</span></Label>
+                        <Input
+                          id="name"
+                          name="name"
+                          value={formData.name}
+                          onChange={handleChange}
+                          required
+                          className="mt-1"
+                          disabled={isSubmitting}
+                        />
+                      </div>
+                      <div>
+                        <Label htmlFor="company">Company</Label>
+                        <Input
+                          id="company"
+                          name="company"
+                          value={formData.company}
+                          onChange={handleChange}
+                          className="mt-1"
+                          disabled={isSubmitting}
+                        />
+                      </div>
+                    </div>
                     <div>
-                      <Label htmlFor="name">Name <span className="text-destructive">*</span></Label>
+                      <Label htmlFor="email">Email <span className="text-destructive">*</span></Label>
                       <Input
-                        id="name"
-                        name="name"
-                        value={formData.name}
+                        id="email"
+                        name="email"
+                        type="email"
+                        value={formData.email}
                         onChange={handleChange}
                         required
                         className="mt-1"
+                        disabled={isSubmitting}
                       />
                     </div>
                     <div>
-                      <Label htmlFor="company">Company</Label>
+                      <Label htmlFor="phone">Phone</Label>
                       <Input
-                        id="company"
-                        name="company"
-                        value={formData.company}
+                        id="phone"
+                        name="phone"
+                        type="tel"
+                        value={formData.phone}
                         onChange={handleChange}
                         className="mt-1"
+                        disabled={isSubmitting}
                       />
                     </div>
-                  </div>
-                  <div>
-                    <Label htmlFor="email">Email <span className="text-destructive">*</span></Label>
-                    <Input
-                      id="email"
-                      name="email"
-                      type="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      required
-                      className="mt-1"
-                    />
-                  </div>
-                  <div>
-                    <Label htmlFor="phone">Phone</Label>
-                    <Input
-                      id="phone"
-                      name="phone"
-                      type="tel"
-                      value={formData.phone}
-                      onChange={handleChange}
-                      className="mt-1"
-                    />
-                  </div>
-                  <div>
-                    <Label htmlFor="message">Message <span className="text-destructive">*</span></Label>
-                    <Textarea
-                      id="message"
-                      name="message"
-                      value={formData.message}
-                      onChange={handleChange}
-                      required
-                      rows={5}
-                      className="mt-1"
-                    />
-                  </div>
-                  <Button type="submit" variant="default" size="lg">
-                    Send Message
-                  </Button>
-                </form>
+                    <div>
+                      <Label htmlFor="message">Message <span className="text-destructive">*</span></Label>
+                      <Textarea
+                        id="message"
+                        name="message"
+                        value={formData.message}
+                        onChange={handleChange}
+                        required
+                        rows={5}
+                        className="mt-1"
+                        disabled={isSubmitting}
+                      />
+                    </div>
+                    <Button type="submit" variant="default" size="lg" disabled={isSubmitting}>
+                      {isSubmitting ? (
+                        <>
+                          <Loader2 className="h-4 w-4 mr-2 animate-spin" />
+                          Sending…
+                        </>
+                      ) : (
+                        'Send Message'
+                      )}
+                    </Button>
+                  </form>
+                )}
               </div>
 
               {/* Contact Information */}
@@ -144,8 +192,8 @@ const Contact = () => {
                         </CardTitle>
                       </CardHeader>
                       <CardContent>
-                        <p>+91 98765 43210</p>
-                        <p>+91 98765 43211</p>
+                        <p className="font-medium">Venkata Ramana B.</p>
+                        <p>+91 96526 96819</p>
                       </CardContent>
                     </Card>
                   </ScrollAnimation>
@@ -159,8 +207,7 @@ const Contact = () => {
                         </CardTitle>
                       </CardHeader>
                       <CardContent>
-                        <p>info@svspolymer.com</p>
-                        <p>sales@svspolymer.com</p>
+                        <p>svspolymerinds@gmail.com</p>
                       </CardContent>
                     </Card>
                   </ScrollAnimation>
@@ -176,29 +223,14 @@ const Contact = () => {
                       <CardContent>
                         <p>
                           SVS Polymer Industries<br />
-                          Industrial Area, Phase 2<br />
-                          Bangalore, Karnataka 560058<br />
-                          India
+                          Plot No. 156 &amp; 157, Navodaya Society I.E.<br />
+                          Phase-V, IDA, Cherlapally<br />
+                          Hyderabad – 500 051
                         </p>
                       </CardContent>
                     </Card>
                   </ScrollAnimation>
 
-                  <ScrollAnimation animation="fade-left" delay={400}>
-                    <Card className="hover:shadow-lg transition-shadow duration-300">
-                      <CardHeader>
-                        <CardTitle className="flex items-center gap-2">
-                          <Clock className="h-5 w-5 text-primary" />
-                          Business Hours
-                        </CardTitle>
-                      </CardHeader>
-                      <CardContent>
-                        <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
-                        <p>Saturday: 9:00 AM - 2:00 PM</p>
-                        <p>Sunday: Closed</p>
-                      </CardContent>
-                    </Card>
-                  </ScrollAnimation>
                 </div>
               </div>
             </div>
@@ -206,14 +238,14 @@ const Contact = () => {
         </section>
 
         {/* Map Section */}
-        <section className="py-20 bg-muted">
+        <section className="py-12 bg-muted">
           <div className="container mx-auto px-4">
             <h2 className="font-heading text-2xl font-bold text-foreground text-center mb-8">
               Find Us on Map
             </h2>
             <div className="max-w-6xl mx-auto rounded-lg overflow-hidden shadow-large">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.5686825785576!2d77.5945627!3d12.9715987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDU4JzE3LjgiTiA3N8KwMzUnNDAuNCJF!5e0!3m2!1sen!2sin!4v1635959195877!5m2!1sen!2sin"
+                src="https://maps.google.com/maps?q=17.456239,78.6008444&output=embed&z=17"
                 width="100%"
                 height="450"
                 style={{ border: 0 }}

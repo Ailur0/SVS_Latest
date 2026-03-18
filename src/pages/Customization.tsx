@@ -7,6 +7,7 @@ import customBuckets from '@/assets/custom-buckets.jpg';
 import { ScrollAnimation } from '@/components/ui/scroll-animation';
 import { useToast } from '@/hooks/use-toast';
 import { useNavigate } from 'react-router-dom';
+import PageHeader from '@/components/ui/page-header';
 
 const Customization = () => {
   const { toast } = useToast();
@@ -23,19 +24,13 @@ const Customization = () => {
       icon: Printer,
       title: 'Custom Printing & Labeling',
       description: 'High-quality printing solutions for your branding needs.',
-      features: ['Screen printing', 'In-mold labeling', 'Heat transfer', 'Offset printing'],
+      features: ['Screen printing', 'Heat transfer', 'Offset printing', 'Custom label design'],
     },
     {
       icon: Package,
       title: 'Custom Sizes & Shapes',
       description: 'Tailored dimensions and designs to fit your specific requirements.',
       features: ['Custom capacities', 'Unique shapes', 'Special lids', 'Handle variations'],
-    },
-    {
-      icon: Layers,
-      title: 'Custom Mold Development',
-      description: 'Create unique packaging solutions with custom mold development.',
-      features: ['Prototype development', '3D design assistance', 'Rapid tooling', 'Exclusive designs'],
     },
   ];
 
@@ -71,17 +66,10 @@ const Customization = () => {
     <div className="min-h-screen bg-background">
       <Header />
       <main className="pt-20">
-        {/* Hero Banner */}
-        <section className="bg-gradient-primary py-20">
-          <div className="container mx-auto px-4">
-            <h1 className="font-heading text-4xl md:text-5xl font-bold text-white text-center">
-              Custom Packaging Solutions
-            </h1>
-          </div>
-        </section>
+        <PageHeader title="Custom Packaging Solutions" subtitle="Custom colours, sizes, closures, and printing — built to your exact specifications." />
 
         {/* Introduction */}
-        <section className="py-20">
+        <section className="py-12">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="font-heading text-3xl font-bold text-foreground mb-6">
@@ -97,7 +85,7 @@ const Customization = () => {
         </section>
 
         {/* Services */}
-        <section className="py-20 bg-muted">
+        <section className="py-12 bg-muted">
           <div className="container mx-auto px-4">
             <h2 className="font-heading text-3xl font-bold text-foreground text-center mb-12">
               Customization Services
@@ -136,7 +124,7 @@ const Customization = () => {
         </section>
 
         {/* Process */}
-        <section className="py-20">
+        <section className="py-12">
           <div className="container mx-auto px-4">
             <h2 className="font-heading text-3xl font-bold text-foreground text-center mb-12">
               Our Customization Process
@@ -163,7 +151,7 @@ const Customization = () => {
         </section>
 
         {/* Portfolio */}
-        <section className="py-20 bg-muted">
+        <section className="py-12 bg-muted">
           <div className="container mx-auto px-4">
             <h2 className="font-heading text-3xl font-bold text-foreground text-center mb-12">
               Custom Solutions Portfolio

@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { ScrollAnimation } from '@/components/ui/scroll-animation';
 import { useToast } from '@/hooks/use-toast';
@@ -9,7 +8,7 @@ const CTASection = () => {
   const navigate = useNavigate();
 
   return (
-    <section className="relative py-24 overflow-hidden">
+    <section className="relative py-12 overflow-hidden">
       {/* Background Gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary-dark to-svs-purple" />
       
@@ -66,18 +65,14 @@ const CTASection = () => {
           
           {/* Trust Indicators */}
           <div className="mt-12 pt-12 border-t border-white/20">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
               <div className="text-center">
-                <div className="text-3xl font-bold text-white mb-1">20+</div>
+                <div className="text-3xl font-bold text-white mb-1">6+</div>
                 <div className="text-white/80 text-sm">Years Experience</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-white mb-1">500+</div>
-                <div className="text-white/80 text-sm">Happy Clients</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-white mb-1">10K+</div>
-                <div className="text-white/80 text-sm">Daily Production</div>
+                <div className="text-3xl font-bold text-white mb-1">200+</div>
+                <div className="text-white/80 text-sm">Happy Customers</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-white mb-1">ISO</div>

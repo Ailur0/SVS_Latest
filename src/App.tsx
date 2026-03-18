@@ -17,6 +17,7 @@ import NotFound from "./pages/NotFound";
 import ProductComparison from "./pages/ProductComparison";
 import CostCalculator from "./pages/CostCalculator";
 import Chatbot from "./components/Chatbot";
+import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +28,7 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/about" element={<About />} />

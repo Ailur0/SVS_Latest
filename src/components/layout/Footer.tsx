@@ -1,14 +1,14 @@
 import { Link } from 'react-router-dom';
-import { Mail, Phone, MapPin, Linkedin, Facebook, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const quickLinks = [
-    { name: 'Home', path: '/' },
     { name: 'About Us', path: '/about' },
     { name: 'Products', path: '/products' },
     { name: 'Quality', path: '/quality' },
+    { name: 'Customization', path: '/customization' },
     { name: 'Contact', path: '/contact' },
   ];
 
@@ -20,16 +20,28 @@ const Footer = () => {
   return (
     <footer className="bg-accent text-accent-foreground">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Company Info */}
           <div>
             <h3 className="font-heading font-semibold text-lg mb-4">
               SVS Polymer Industries
             </h3>
             <p className="text-sm opacity-90 mb-4">
-              Leading manufacturer of premium plastic packaging solutions. 
-              Committed to quality, innovation, and sustainability in every product we create.
+              Manufacturer of rigid plastic packaging for paint, food grade, and lubricant sectors.
+              Trusted by 200+ customers across India with consistent quality and on-time delivery.
             </p>
+            <ul className="space-y-2 mt-4">
+              {legalLinks.map((link) => (
+                <li key={link.name}>
+                  <Link
+                    to={link.path}
+                    className="text-sm opacity-75 hover:opacity-100 transition-opacity"
+                  >
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
 
           {/* Quick Links */}
@@ -42,7 +54,7 @@ const Footer = () => {
                 <li key={link.name}>
                   <Link
                     to={link.path}
-                    className="text-sm opacity-90 hover:opacity-100 hover:text-primary-foreground transition-opacity"
+                    className="text-sm opacity-90 hover:opacity-100 transition-opacity"
                   >
                     {link.name}
                   </Link>
@@ -54,80 +66,32 @@ const Footer = () => {
           {/* Contact Info */}
           <div>
             <h3 className="font-heading font-semibold text-lg mb-4">
-              Contact Info
+              Contact
             </h3>
             <div className="space-y-3">
               <a
-                href="tel:+919876543210"
+                href="tel:+919652696819"
                 className="flex items-center gap-2 text-sm opacity-90 hover:opacity-100 transition-opacity"
               >
-                <Phone className="h-4 w-4" />
-                +91 98765 43210
+                <Phone className="h-4 w-4 flex-shrink-0" />
+                +91 96526 96819
               </a>
               <a
-                href="mailto:info@svspolymer.com"
-                className="flex items-center gap-2 text-sm opacity-90 hover:opacity-100 transition-opacity"
+                href="mailto:svspolymerinds@gmail.com"
+                className="flex items-center gap-2 text-sm opacity-90 hover:opacity-100 transition-opacity break-all"
               >
-                <Mail className="h-4 w-4" />
-                info@svspolymer.com
+                <Mail className="h-4 w-4 flex-shrink-0" />
+                svspolymerinds@gmail.com
               </a>
               <div className="flex items-start gap-2 text-sm opacity-90">
-                <MapPin className="h-4 w-4 mt-0.5" />
+                <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
                 <span>
-                  Industrial Area, Phase 2<br />
-                  Bangalore, Karnataka 560058<br />
-                  India
+                  Plot No. 156 &amp; 157, Navodaya Society I.E.<br />
+                  Phase-V, IDA, Cherlapally<br />
+                  Hyderabad – 500 051
                 </span>
               </div>
             </div>
-          </div>
-
-          {/* Social & Legal */}
-          <div>
-            <h3 className="font-heading font-semibold text-lg mb-4">
-              Follow Us
-            </h3>
-            <div className="flex gap-4 mb-6">
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="opacity-90 hover:opacity-100 transition-opacity"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="h-5 w-5" />
-              </a>
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="opacity-90 hover:opacity-100 transition-opacity"
-                aria-label="Facebook"
-              >
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="opacity-90 hover:opacity-100 transition-opacity"
-                aria-label="Twitter"
-              >
-                <Twitter className="h-5 w-5" />
-              </a>
-            </div>
-            <ul className="space-y-2">
-              {legalLinks.map((link) => (
-                <li key={link.name}>
-                  <Link
-                    to={link.path}
-                    className="text-sm opacity-90 hover:opacity-100 transition-opacity"
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
           </div>
         </div>
 

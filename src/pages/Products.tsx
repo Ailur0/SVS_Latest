@@ -42,7 +42,7 @@ const products: Record<'paint' | 'food' | 'lubricants', Product[]> = {
   paint: [
     {
       id: 'p1',
-      name: '20kg Distemper Container',
+      name: '20kg Container',
       image: '/Paint/20kg-distemper-ccd.jpg',
       capacity: '20 kg',
       capacityGroup: '10L+',
@@ -53,7 +53,7 @@ const products: Record<'paint' | 'food' | 'lubricants', Product[]> = {
     },
     {
       id: 'p2',
-      name: '20kg Distemper Container',
+      name: '20kg Container',
       image: '/Paint/20kg-distemper-flat.jpg',
       capacity: '20 kg',
       capacityGroup: '10L+',
@@ -64,7 +64,7 @@ const products: Record<'paint' | 'food' | 'lubricants', Product[]> = {
     },
     {
       id: 'p3',
-      name: '10kg Distemper Container',
+      name: '10kg Container',
       image: '/Paint/10kg-distemper-ccd.jpg',
       capacity: '10 kg',
       capacityGroup: '10L+',
@@ -75,7 +75,7 @@ const products: Record<'paint' | 'food' | 'lubricants', Product[]> = {
     },
     {
       id: 'p4',
-      name: '10kg Distemper Container',
+      name: '10kg Container',
       image: '/Paint/10kg-distemper-flat.jpg',
       capacity: '10 kg',
       capacityGroup: '10L+',
@@ -86,7 +86,7 @@ const products: Record<'paint' | 'food' | 'lubricants', Product[]> = {
     },
     {
       id: 'p5',
-      name: '5kg Distemper Container',
+      name: '5kg Container',
       image: '/Paint/5kg-distemper-ccd.jpg',
       capacity: '5 kg',
       capacityGroup: '5L – 10L',
@@ -97,7 +97,7 @@ const products: Record<'paint' | 'food' | 'lubricants', Product[]> = {
     },
     {
       id: 'p6',
-      name: '5kg Distemper Container',
+      name: '5kg Container',
       image: '/Paint/5kg-distemper-flat.jpg',
       capacity: '5 kg',
       capacityGroup: '5L – 10L',
@@ -108,7 +108,7 @@ const products: Record<'paint' | 'food' | 'lubricants', Product[]> = {
     },
     {
       id: 'p7',
-      name: '2kg Distemper Container',
+      name: '2kg Container',
       image: '/Paint/2kg-distemper-flat.jpg',
       capacity: '2 kg',
       capacityGroup: '1L – 5L',
@@ -119,7 +119,7 @@ const products: Record<'paint' | 'food' | 'lubricants', Product[]> = {
     },
     {
       id: 'p8',
-      name: '1kg Distemper Container',
+      name: '1kg Container',
       image: '/Paint/1kg-distemper-flat.jpg',
       capacity: '1 kg',
       capacityGroup: '1L – 5L',

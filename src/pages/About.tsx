@@ -44,7 +44,7 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  Founded in 2020, SVS Polymer Industries was established with a clear focus:
+                  Founded in 2019, SVS Polymer Industries was established with a clear focus:
                   to deliver reliable, high-quality rigid plastic packaging to brands that demand
                   consistency, compliance, and shelf-ready performance.
                 </p>

@@ -5,19 +5,9 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const slides = [
   {
-    badge: 'PAINT PACKAGING',
-    title: 'Shelf-Ready Paint Packaging',
-    subtitle: 'Distemper containers from 1kg to 20kg — tamper-evident closures, UV resistant, built for shelf impact.',
-    cta: 'View Paint Range',
-    ctaLink: '/products?category=paint',
-    image: '/Paint/20kg-distemper-ccd.jpg',
-    accent: 'from-slate-900 via-slate-800 to-primary/80',
-    imageBg: 'bg-slate-900',
-  },
-  {
     badge: 'FOOD GRADE',
     title: 'Certified Food-Grade Containers',
-    subtitle: 'Round containers from 100ml to 10kg — BPA-free, odourless, and certified for direct food contact.',
+    subtitle: 'Round containers from 1000ml to 20Ltr — BPA-free, odourless, and certified for direct food contact.',
     cta: 'View Food Grade Range',
     ctaLink: '/products?category=food',
     image: '/Food Grade/MRJ_10kg-round.jpg',
@@ -25,9 +15,19 @@ const slides = [
     imageBg: 'bg-emerald-950',
   },
   {
+    badge: 'PAINT PACKAGING',
+    title: 'Shelf-Ready Paint Packaging',
+    subtitle: 'Paint containers from 1Ltr to 20Ltr and 1kg to 20kg — tamper-evident closures, UV resistant, built for shelf impact.',
+    cta: 'View Paint Range',
+    ctaLink: '/products?category=paint',
+    image: '/Paint/20kg-distemper-ccd.jpg',
+    accent: 'from-slate-900 via-slate-800 to-primary/80',
+    imageBg: 'bg-slate-900',
+  },
+  {
     badge: 'LUBRICANTS',
     title: 'Leak-Resistant Lubricant Packaging',
-    subtitle: 'HDPE containers from 500ml to 20L — flat lid and spout closures for engine oils and industrial lubricants.',
+    subtitle: 'PPCP containers from 500ml to 20L — flat lid and spout closures for engine oils and industrial lubricants.',
     cta: 'View Lubricants Range',
     ctaLink: '/products?category=lubricants',
     image: '/Lubricants/ML 20_Spout.jpg',

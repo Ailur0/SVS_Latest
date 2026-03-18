@@ -3,11 +3,33 @@ import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
+const Mark = ({ children }: { children: React.ReactNode }) => (
+  <span className="relative inline-block">
+    <svg
+      className="absolute inset-0 w-full h-full overflow-visible"
+      viewBox="0 0 200 28"
+      preserveAspectRatio="none"
+      aria-hidden="true"
+    >
+      {/* Left teeth protrude to negative x (OUT), valleys sit at x=0 — full left coverage.
+          Right teeth protrude past x=200 (OUT), valleys sit at x=200 — full right coverage. */}
+      <path
+        d="M0,7 C40,3 90,12 140,5 C165,2 185,9 200,6
+           L213,5 L200,10 L212,13 L200,17 L211,20 L200,23
+           C160,26 120,20 80,24 C45,28 15,22 0,25
+           L-13,24 L0,20 L-11,17 L0,14 L-12,11 L0,8 Z"
+        fill="rgba(250,204,21,0.82)"
+      />
+    </svg>
+    <span className="relative px-3 py-0.5 font-semibold text-white">{children}</span>
+  </span>
+);
+
 const slides = [
   {
     badge: 'FOOD GRADE',
     title: 'Certified Food-Grade Containers',
-    subtitle: 'Round containers from 1000ml to 20Ltr — BPA-free, odourless, and certified for direct food contact.',
+    subtitle: <>Round containers from 1000ml to 20Ltr — <Mark>BPA-free</Mark>, <Mark>odourless</Mark>, and certified for direct food contact.</>,
     cta: 'View Food Grade Range',
     ctaLink: '/products?category=food',
     image: '/Food Grade/MRJ_10kg-round.jpg',
@@ -17,7 +39,7 @@ const slides = [
   {
     badge: 'PAINT PACKAGING',
     title: 'Shelf-Ready Paint Packaging',
-    subtitle: 'Paint containers from 1Ltr to 20Ltr and 1kg to 20kg — tamper-evident closures, UV resistant, built for shelf impact.',
+    subtitle: <>Paint containers from 1Ltr to 20Ltr and 1kg to 20kg — <Mark>tamper-evident</Mark> closures, <Mark>UV resistant</Mark>, built for shelf impact.</>,
     cta: 'View Paint Range',
     ctaLink: '/products?category=paint',
     image: '/Paint/20kg-distemper-ccd.jpg',
@@ -27,7 +49,7 @@ const slides = [
   {
     badge: 'LUBRICANTS',
     title: 'Leak-Resistant Lubricant Packaging',
-    subtitle: 'PPCP containers from 500ml to 20L — flat lid and spout closures for engine oils and industrial lubricants.',
+    subtitle: <><Mark>PPCP</Mark> containers from 500ml to 20L — flat lid and <Mark>spout closures</Mark> for engine oils and industrial lubricants.</>,
     cta: 'View Lubricants Range',
     ctaLink: '/products?category=lubricants',
     image: '/Lubricants/ML 20_Spout.jpg',
@@ -81,7 +103,7 @@ const HeroSection = () => {
             <h1 className="font-heading text-3xl font-bold text-white leading-[1.15] mb-4">
               {slide.title}
             </h1>
-            <p className="text-white/75 text-base leading-relaxed mb-8">
+            <p className="text-white/75 text-base leading-relaxed mb-8 [&>span]:text-white">
               {slide.subtitle}
             </p>
             <div className="flex flex-wrap gap-3">
@@ -170,7 +192,7 @@ const HeroSection = () => {
             <h1 className="font-heading text-5xl lg:text-[3.25rem] xl:text-6xl font-bold text-white leading-[1.1] mb-6">
               {slide.title}
             </h1>
-            <p className="text-white/75 text-lg md:text-xl leading-relaxed mb-10 max-w-lg">
+            <p className="text-white/75 text-lg md:text-xl leading-relaxed mb-10 max-w-lg [&>span]:text-white">
               {slide.subtitle}
             </p>
             <div className="flex flex-wrap gap-4">

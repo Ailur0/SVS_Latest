@@ -4,8 +4,9 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { cn } from "@/lib/utils";
-import logo from "@/assets/logo.png";
 import { useNavigate } from "react-router-dom";
+
+const CHATBOT_IMG = "/chatbot.png";
 
 // Quick replies that navigate to a page instead of sending as a chat message
 const navRoutes: Record<string, string> = {
@@ -263,7 +264,7 @@ export default function Chatbot() {
         )}
         aria-label="Open chat"
       >
-        <img src={logo} alt="Bucky" className="w-full h-full object-contain p-1" />
+        <img src={CHATBOT_IMG} alt="Bucky" className="w-full h-full object-contain p-1" />
       </button>
 
       {/* Chat window */}
@@ -280,7 +281,7 @@ export default function Chatbot() {
         <div className="flex items-center justify-between p-4 border-b border-border bg-primary text-primary-foreground sm:rounded-t-2xl flex-shrink-0">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center overflow-hidden flex-shrink-0">
-              <img src={logo} alt="Bucky" className="w-full h-full object-contain p-0.5" />
+              <img src={CHATBOT_IMG} alt="Bucky" className="w-full h-full object-contain p-0.5" />
             </div>
             <div>
               <h3 className="font-semibold text-base">Bucky</h3>
@@ -311,7 +312,7 @@ export default function Chatbot() {
                   )}
                 >
                   {message.sender === "bot" ? (
-                    <img src={logo} alt="Bucky" className="w-full h-full object-contain p-0.5" />
+                    <img src={CHATBOT_IMG} alt="Bucky" className="w-full h-full object-contain p-0.5" />
                   ) : (
                     <User className="h-4 w-4" />
                   )}
@@ -353,7 +354,7 @@ export default function Chatbot() {
             {isTyping && (
               <div className="flex gap-2.5">
                 <div className="w-8 h-8 rounded-full bg-white border-2 border-primary flex items-center justify-center overflow-hidden flex-shrink-0">
-                  <img src={logo} alt="Bucky" className="w-full h-full object-contain p-0.5" />
+                  <img src={CHATBOT_IMG} alt="Bucky" className="w-full h-full object-contain p-0.5" />
                 </div>
                 <div className="bg-muted p-3 rounded-2xl rounded-tl-none">
                   <div className="flex gap-1 items-center h-4">

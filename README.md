@@ -25,7 +25,7 @@ npm install
 npm run dev
 ```
 
-The app runs locally on http://localhost:8080 by default.
+The app runs locally on [http://localhost:8080](http://localhost:8080) by default.
 
 ## Available Scripts
 
@@ -37,18 +37,14 @@ The app runs locally on http://localhost:8080 by default.
 
 ## Project Structure
 
-```text
-src/
-	components/
-		home/
-		layout/
-		ui/
-	hooks/
-	lib/
-	pages/
-	App.tsx
-	main.tsx
-```
+- src/components/home/
+- src/components/layout/
+- src/components/ui/
+- src/hooks/
+- src/lib/
+- src/pages/
+- src/App.tsx
+- src/main.tsx
 
 ## Deployment
 

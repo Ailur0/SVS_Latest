@@ -65,7 +65,7 @@ const Customization = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <main className="pt-20">
+      <main className="">
         <PageHeader title="Custom Packaging Solutions" subtitle="Custom colours, sizes, closures, and printing — built to your exact specifications." />
 
         {/* Introduction */}

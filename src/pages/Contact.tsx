@@ -74,7 +74,7 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <main className="pt-20">
+      <main className="">
         <PageHeader title="Get in Touch" subtitle="Reach out with your enquiry and we'll respond promptly." />
 
         {/* Contact Section */}

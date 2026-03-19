@@ -16,6 +16,8 @@ import Terms from "./pages/Terms";
 import NotFound from "./pages/NotFound";
 import ProductComparison from "./pages/ProductComparison";
 import CostCalculator from "./pages/CostCalculator";
+import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
 import Chatbot from "./components/Chatbot";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -41,6 +43,8 @@ const App = () => (
             <Route path="/calculator" element={<CostCalculator />} />
             <Route path="/privacy" element={<PrivacyPolicy />} />
             <Route path="/terms" element={<Terms />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

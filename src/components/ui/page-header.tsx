@@ -4,7 +4,7 @@ interface PageHeaderProps {
 }
 
 const PageHeader = ({ title, subtitle }: PageHeaderProps) => (
-  <div className="relative overflow-hidden bg-gradient-to-br from-primary/12 via-primary/5 to-accent/8">
+  <div className="relative overflow-hidden bg-gradient-to-br from-primary/12 via-primary/5 to-accent/8 pt-[72px]">
     {/* Top accent bar */}
     <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-primary via-primary/70 to-transparent" />
 

@@ -16,6 +16,7 @@ const navItems = [
   { name: 'About Us', path: '/about' },
   { name: 'Quality', path: '/quality' },
   { name: 'Customization', path: '/customization' },
+  { name: 'Blog', path: '/blog' },
   { name: 'Contact Us', path: '/contact' },
 ];
 

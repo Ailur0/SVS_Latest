@@ -32,7 +32,7 @@ const About = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <main className="pt-20">
+      <main className="">
         <PageHeader title="About SVS Polymer Industries" />
 
         {/* Company Story */}

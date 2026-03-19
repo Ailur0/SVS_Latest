@@ -44,7 +44,7 @@ const Quality = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <main className="pt-20">
+      <main className="">
         <PageHeader title="Our Commitment to Quality" subtitle="Every product undergoes rigorous testing before it leaves our facility." />
 
         {/* Introduction */}

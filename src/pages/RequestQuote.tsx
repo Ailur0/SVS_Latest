@@ -104,7 +104,7 @@ const RequestQuote = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <main className="pt-20">
+      <main className="">
         <PageHeader title="Request a Quote" subtitle="Share your requirements and we'll get back to you within 24 hours." />
 
         {/* Form Section */}

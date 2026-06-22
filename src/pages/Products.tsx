@@ -43,7 +43,7 @@ const products: Record<'paint' | 'food' | 'lubricants', Product[]> = {
     {
       id: 'p1',
       name: '20kg Container',
-      image: '/Paint/20kg-distemper-ccd.jpg',
+      image: '/Paint/20kg-distemper-ccd.webp',
       capacity: '20 kg',
       capacityGroup: '10L+',
       closure: 'CCD Closure',
@@ -54,7 +54,7 @@ const products: Record<'paint' | 'food' | 'lubricants', Product[]> = {
     {
       id: 'p2',
       name: '20kg Container',
-      image: '/Paint/20kg-distemper-flat.jpg',
+      image: '/Paint/20kg-distemper-flat.webp',
       capacity: '20 kg',
       capacityGroup: '10L+',
       closure: 'Flat Lid',
@@ -65,7 +65,7 @@ const products: Record<'paint' | 'food' | 'lubricants', Product[]> = {
     {
       id: 'p3',
       name: '10kg Container',
-      image: '/Paint/10kg-distemper-ccd.jpg',
+      image: '/Paint/10kg-distemper-ccd.webp',
       capacity: '10 kg',
       capacityGroup: '10L+',
       closure: 'CCD Closure',
@@ -76,7 +76,7 @@ const products: Record<'paint' | 'food' | 'lubricants', Product[]> = {
     {
       id: 'p4',
       name: '10kg Container',
-      image: '/Paint/10kg-distemper-flat.jpg',
+      image: '/Paint/10kg-distemper-flat.webp',
       capacity: '10 kg',
       capacityGroup: '10L+',
       closure: 'Flat Lid',
@@ -87,7 +87,7 @@ const products: Record<'paint' | 'food' | 'lubricants', Product[]> = {
     {
       id: 'p5',
       name: '5kg Container',
-      image: '/Paint/5kg-distemper-ccd.jpg',
+      image: '/Paint/5kg-distemper-ccd.webp',
       capacity: '5 kg',
       capacityGroup: '5L – 10L',
       closure: 'CCD Closure',
@@ -98,7 +98,7 @@ const products: Record<'paint' | 'food' | 'lubricants', Product[]> = {
     {
       id: 'p6',
       name: '5kg Container',
-      image: '/Paint/5kg-distemper-flat.jpg',
+      image: '/Paint/5kg-distemper-flat.webp',
       capacity: '5 kg',
       capacityGroup: '5L – 10L',
       closure: 'Flat Lid',
@@ -109,7 +109,7 @@ const products: Record<'paint' | 'food' | 'lubricants', Product[]> = {
     {
       id: 'p7',
       name: '2kg Container',
-      image: '/Paint/2kg-distemper-flat.jpg',
+      image: '/Paint/2kg-distemper-flat.webp',
       capacity: '2 kg',
       capacityGroup: '1L – 5L',
       closure: 'Flat Lid',
@@ -120,7 +120,7 @@ const products: Record<'paint' | 'food' | 'lubricants', Product[]> = {
     {
       id: 'p8',
       name: '1kg Container',
-      image: '/Paint/1kg-distemper-flat.jpg',
+      image: '/Paint/1kg-distemper-flat.webp',
       capacity: '1 kg',
       capacityGroup: '1L – 5L',
       closure: 'Flat Lid',
@@ -131,7 +131,7 @@ const products: Record<'paint' | 'food' | 'lubricants', Product[]> = {
     {
       id: 'p9',
       name: '100gm Round Container',
-      image: '/Paint/100gms-round.jpg',
+      image: '/Paint/100gms-round.webp',
       capacity: '100 gm',
       capacityGroup: 'Up to 1L',
       closure: 'Round Lid',
@@ -144,7 +144,7 @@ const products: Record<'paint' | 'food' | 'lubricants', Product[]> = {
     {
       id: 'f1',
       name: 'MRJ 10kg Round Container',
-      image: '/Food Grade/MRJ_10kg-round.jpg',
+      image: '/Food Grade/MRJ_10kg-round.webp',
       capacity: '10 kg',
       capacityGroup: '10L+',
       closure: 'Round Lid',
@@ -155,7 +155,7 @@ const products: Record<'paint' | 'food' | 'lubricants', Product[]> = {
     {
       id: 'f2',
       name: 'MRJ 4.4L Round Container',
-      image: '/Food Grade/MRJ_4400ml-round.jpg',
+      image: '/Food Grade/MRJ_4400ml-round.webp',
       capacity: '4.4 L',
       capacityGroup: '1L – 5L',
       closure: 'Round Lid',
@@ -166,7 +166,7 @@ const products: Record<'paint' | 'food' | 'lubricants', Product[]> = {
     {
       id: 'f3',
       name: 'MRJ 2kg Round Container',
-      image: '/Food Grade/MRJ_2kg-round.jpg',
+      image: '/Food Grade/MRJ_2kg-round.webp',
       capacity: '2 kg',
       capacityGroup: '1L – 5L',
       closure: 'Round Lid',
@@ -177,7 +177,7 @@ const products: Record<'paint' | 'food' | 'lubricants', Product[]> = {
     {
       id: 'f4',
       name: 'MRJ 600ml Round Container',
-      image: '/Food Grade/MRJ600-ml-round.jpg',
+      image: '/Food Grade/MRJ600-ml-round.webp',
       capacity: '600 ml',
       capacityGroup: 'Up to 1L',
       closure: 'Round Lid',
@@ -188,7 +188,7 @@ const products: Record<'paint' | 'food' | 'lubricants', Product[]> = {
     {
       id: 'f5',
       name: '1000ml Round Container',
-      image: '/Food Grade/1000ml-round.jpg',
+      image: '/Food Grade/1000ml-round.webp',
       capacity: '1000 ml',
       capacityGroup: 'Up to 1L',
       closure: 'Round Lid',
@@ -199,7 +199,7 @@ const products: Record<'paint' | 'food' | 'lubricants', Product[]> = {
     {
       id: 'f6',
       name: '750ml Round Container (HUL)',
-      image: '/Food Grade/750ml-round-hul.jpg',
+      image: '/Food Grade/750ml-round-hul.webp',
       capacity: '750 ml',
       capacityGroup: 'Up to 1L',
       closure: 'Round Lid',
@@ -210,7 +210,7 @@ const products: Record<'paint' | 'food' | 'lubricants', Product[]> = {
     {
       id: 'f7',
       name: '500ml Round Container (HUL)',
-      image: '/Food Grade/500ml-round-hul.jpg',
+      image: '/Food Grade/500ml-round-hul.webp',
       capacity: '500 ml',
       capacityGroup: 'Up to 1L',
       closure: 'Round Lid',
@@ -221,7 +221,7 @@ const products: Record<'paint' | 'food' | 'lubricants', Product[]> = {
     {
       id: 'f8',
       name: '500ml Round Container',
-      image: '/Food Grade/500ml-round.jpg',
+      image: '/Food Grade/500ml-round.webp',
       capacity: '500 ml',
       capacityGroup: 'Up to 1L',
       closure: 'Round Lid',
@@ -232,7 +232,7 @@ const products: Record<'paint' | 'food' | 'lubricants', Product[]> = {
     {
       id: 'f9',
       name: '460ml Round Container (Amul Masti)',
-      image: '/Food Grade/460ml-round-amul-masti.jpg',
+      image: '/Food Grade/460ml-round-amul-masti.webp',
       capacity: '460 ml',
       capacityGroup: 'Up to 1L',
       closure: 'Round Lid',
@@ -243,7 +243,7 @@ const products: Record<'paint' | 'food' | 'lubricants', Product[]> = {
     {
       id: 'f10',
       name: '460ml Round Container (Roto)',
-      image: '/Food Grade/460ml-round-roto.jpg',
+      image: '/Food Grade/460ml-round-roto.webp',
       capacity: '460 ml',
       capacityGroup: 'Up to 1L',
       closure: 'Round Lid',
@@ -254,7 +254,7 @@ const products: Record<'paint' | 'food' | 'lubricants', Product[]> = {
     {
       id: 'f11',
       name: '360ml Round Container',
-      image: '/Food Grade/360ml-round.jpg',
+      image: '/Food Grade/360ml-round.webp',
       capacity: '360 ml',
       capacityGroup: 'Up to 1L',
       closure: 'Round Lid',
@@ -265,7 +265,7 @@ const products: Record<'paint' | 'food' | 'lubricants', Product[]> = {
     {
       id: 'f12',
       name: '125ml Round Container',
-      image: '/Food Grade/125ml-round.jpg',
+      image: '/Food Grade/125ml-round.webp',
       capacity: '125 ml',
       capacityGroup: 'Up to 1L',
       closure: 'Round Lid',
@@ -276,7 +276,7 @@ const products: Record<'paint' | 'food' | 'lubricants', Product[]> = {
     {
       id: 'f13',
       name: '100ml Round Container',
-      image: '/Food Grade/100ml-round.jpg',
+      image: '/Food Grade/100ml-round.webp',
       capacity: '100 ml',
       capacityGroup: 'Up to 1L',
       closure: 'Round Lid',
@@ -289,7 +289,7 @@ const products: Record<'paint' | 'food' | 'lubricants', Product[]> = {
     {
       id: 'l1',
       name: 'ML 20L Container',
-      image: '/Lubricants/ML 20L_flat.jpg',
+      image: '/Lubricants/ML 20L_flat.webp',
       capacity: '20 L',
       capacityGroup: '10L+',
       closure: 'Flat Lid',
@@ -300,7 +300,7 @@ const products: Record<'paint' | 'food' | 'lubricants', Product[]> = {
     {
       id: 'l2',
       name: 'ML 20L Container with Spout',
-      image: '/Lubricants/ML 20_Spout.jpg',
+      image: '/Lubricants/ML 20_Spout.webp',
       capacity: '20 L',
       capacityGroup: '10L+',
       closure: 'Spout Closure',
@@ -311,7 +311,7 @@ const products: Record<'paint' | 'food' | 'lubricants', Product[]> = {
     {
       id: 'l3',
       name: 'ML 10L Container',
-      image: '/Lubricants/ML 10_flat.jpg',
+      image: '/Lubricants/ML 10_flat.webp',
       capacity: '10 L',
       capacityGroup: '5L – 10L',
       closure: 'Flat Lid',
@@ -322,7 +322,7 @@ const products: Record<'paint' | 'food' | 'lubricants', Product[]> = {
     {
       id: 'l4',
       name: 'ML 10L Container with Spout',
-      image: '/Lubricants/ML 10_Spout.jpg',
+      image: '/Lubricants/ML 10_Spout.webp',
       capacity: '10 L',
       capacityGroup: '5L – 10L',
       closure: 'Spout Closure',
@@ -333,7 +333,7 @@ const products: Record<'paint' | 'food' | 'lubricants', Product[]> = {
     {
       id: 'l5',
       name: 'ML 7.5L Container',
-      image: '/Lubricants/ML 7.5_flat.jpg',
+      image: '/Lubricants/ML 7.5_flat.webp',
       capacity: '7.5 L',
       capacityGroup: '5L – 10L',
       closure: 'Flat Lid',
@@ -344,7 +344,7 @@ const products: Record<'paint' | 'food' | 'lubricants', Product[]> = {
     {
       id: 'l6',
       name: 'ML 7.5L Container with Spout',
-      image: '/Lubricants/ML 7.5_spout.jpg',
+      image: '/Lubricants/ML 7.5_spout.webp',
       capacity: '7.5 L',
       capacityGroup: '5L – 10L',
       closure: 'Spout Closure',
@@ -355,7 +355,7 @@ const products: Record<'paint' | 'food' | 'lubricants', Product[]> = {
     {
       id: 'l7',
       name: 'ML 500ml Container',
-      image: '/Lubricants/ML 05.jpg',
+      image: '/Lubricants/ML 05.webp',
       capacity: '500 ml',
       capacityGroup: 'Up to 1L',
       closure: 'Standard Cap',
@@ -366,7 +366,7 @@ const products: Record<'paint' | 'food' | 'lubricants', Product[]> = {
     {
       id: 'l8',
       name: 'ML 500ml Container with Spout',
-      image: '/Lubricants/ML 05_Spout.jpg',
+      image: '/Lubricants/ML 05_Spout.webp',
       capacity: '500 ml',
       capacityGroup: 'Up to 1L',
       closure: 'Spout Closure',
@@ -645,6 +645,9 @@ const Products = () => {
                                 <img
                                   src={product.image}
                                   alt={product.name}
+                                  loading="lazy"
+                                  width="300"
+                                  height="300"
                                   className="w-full h-full object-contain p-2 transition-transform duration-300 hover:scale-110"
                                 />
                               </div>

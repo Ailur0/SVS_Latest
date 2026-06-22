@@ -233,7 +233,7 @@ export default function BlogPost() {
       datePublished: post.date,
       dateModified: post.date,
       author: { '@type': 'Organization', name: 'SVS Polymer Industries', url: SITE_URL },
-      publisher: { '@type': 'Organization', name: 'SVS Polymer Industries', url: SITE_URL, logo: { '@type': 'ImageObject', url: `${SITE_URL}/logo.png` } },
+      publisher: { '@type': 'Organization', name: 'SVS Polymer Industries', url: SITE_URL, logo: { '@type': 'ImageObject', url: `${SITE_URL}/logo.webp` } },
       mainEntityOfPage: { '@type': 'WebPage', '@id': `${SITE_URL}/blog/${post.slug}` },
     }];
 

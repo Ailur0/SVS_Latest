@@ -160,6 +160,9 @@ const Customization = () => {
               <img
                 src={customBuckets}
                 alt="Custom bucket solutions"
+                loading="lazy"
+                width="800"
+                height="600"
                 className="w-full rounded-lg shadow-large mb-8"
               />
               <p className="text-center text-muted-foreground mb-8">

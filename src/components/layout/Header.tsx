@@ -88,6 +88,8 @@ const Header = () => {
             <img
               src={logo}
               alt="SVS Polymer Industries"
+              width="200"
+              height="44"
               className="h-11 w-auto transition-transform duration-200 group-hover:scale-105"
             />
             <div className="hidden xl:block leading-tight">

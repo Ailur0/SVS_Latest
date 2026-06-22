@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
 import { useNavigate } from "react-router-dom";
 
-const CHATBOT_IMG = "/chatbot.png";
+const CHATBOT_IMG = "/chatbot.webp";
 
 const navRoutes: Record<string, string> = {
   "View Products": "/products",
@@ -302,7 +302,7 @@ export default function Chatbot() {
       >
         {/* Pulse ring */}
         <span className="absolute inset-0 rounded-full border-2 border-primary animate-ping opacity-30" />
-        <img src={CHATBOT_IMG} alt="Bucky" className="w-full h-full object-contain p-1 relative z-10" />
+        <img src={CHATBOT_IMG} alt="Bucky" loading="lazy" width="56" height="56" className="w-full h-full object-contain p-1 relative z-10" />
         {hasUnread && (
           <span className="absolute -top-1 -right-1 w-4 h-4 bg-red-500 rounded-full border-2 border-white z-20 flex items-center justify-center">
             <span className="text-[8px] text-white font-bold">!</span>
@@ -316,7 +316,7 @@ export default function Chatbot() {
           onClick={() => setIsMinimized(false)}
           className="fixed bottom-6 right-6 z-50 flex items-center gap-2 bg-primary text-primary-foreground px-4 py-2.5 rounded-full shadow-xl hover:shadow-2xl transition-all text-sm font-medium"
         >
-          <img src={CHATBOT_IMG} alt="Bucky" className="w-6 h-6 object-contain bg-white rounded-full p-0.5" />
+          <img src={CHATBOT_IMG} alt="Bucky" loading="lazy" width="24" height="24" className="w-6 h-6 object-contain bg-white rounded-full p-0.5" />
           Bucky
           {hasUnread && <span className="w-2 h-2 bg-red-400 rounded-full" />}
         </button>
@@ -339,7 +339,7 @@ export default function Chatbot() {
           <div className="flex items-center gap-3">
             <div className="relative w-10 h-10 flex-shrink-0">
               <div className="w-10 h-10 bg-white rounded-full overflow-hidden border-2 border-white/30">
-                <img src={CHATBOT_IMG} alt="Bucky" className="w-full h-full object-contain p-0.5" />
+                <img src={CHATBOT_IMG} alt="Bucky" loading="lazy" width="40" height="40" className="w-full h-full object-contain p-0.5" />
               </div>
               {/* Online dot */}
               <span className="absolute bottom-0 right-0 w-3 h-3 bg-emerald-400 rounded-full border-2 border-primary" />
@@ -391,7 +391,7 @@ export default function Chatbot() {
                     isBot ? "bg-white border-2 border-primary" : "bg-primary text-primary-foreground"
                   )}>
                     {isBot
-                      ? <img src={CHATBOT_IMG} alt="Bucky" className="w-full h-full object-contain p-0.5" />
+                      ? <img src={CHATBOT_IMG} alt="Bucky" loading="lazy" width="28" height="28" className="w-full h-full object-contain p-0.5" />
                       : <User className="h-3.5 w-3.5" />
                     }
                   </div>
@@ -433,7 +433,7 @@ export default function Chatbot() {
           {isTyping && (
             <div className="flex gap-2.5 items-end">
               <div className="w-7 h-7 rounded-full bg-white border-2 border-primary flex items-center justify-center overflow-hidden flex-shrink-0">
-                <img src={CHATBOT_IMG} alt="Bucky" className="w-full h-full object-contain p-0.5" />
+                <img src={CHATBOT_IMG} alt="Bucky" loading="lazy" width="28" height="28" className="w-full h-full object-contain p-0.5" />
               </div>
               <div className="bg-muted px-4 py-3 rounded-2xl rounded-bl-sm">
                 <div className="flex gap-1 items-center">

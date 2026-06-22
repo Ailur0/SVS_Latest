@@ -66,8 +66,11 @@ export default function UgadiGreeting() {
 
       {/* Full-bleed background image */}
       <img
-        src="/Ugadi wishes.png"
+        src="/Ugadi wishes.webp"
         alt="Ugadi"
+        loading="lazy"
+        width="1920"
+        height="1080"
         className="absolute inset-0 w-full h-full object-cover"
         draggable={false}
       />

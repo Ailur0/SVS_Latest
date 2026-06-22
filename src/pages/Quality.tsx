@@ -122,6 +122,9 @@ const Quality = () => {
                 <img
                   src={qualityLab}
                   alt="Quality Control Laboratory"
+                  loading="lazy"
+                  width="600"
+                  height="400"
                   className="w-full h-full object-cover"
                 />
               </div>

@@ -32,7 +32,7 @@ const slides = [
     subtitle: <>Round containers from 1000ml to 20Ltr — <Mark>BPA-free</Mark>, <Mark>odourless</Mark>, and certified for direct food contact.</>,
     cta: 'View Food Grade Range',
     ctaLink: '/products?category=food',
-    image: '/Food Grade/MRJ_10kg-round.jpg',
+    image: '/Food Grade/MRJ_10kg-round.webp',
     accent: 'from-slate-900 via-emerald-950 to-emerald-800/70',
     imageBg: 'bg-emerald-950',
   },
@@ -42,7 +42,7 @@ const slides = [
     subtitle: <>Paint containers from 1Ltr to 20Ltr and 1kg to 20kg — <Mark>tamper-evident</Mark> closures, <Mark>UV resistant</Mark>, built for shelf impact.</>,
     cta: 'View Paint Range',
     ctaLink: '/products?category=paint',
-    image: '/Paint/20kg-distemper-ccd.jpg',
+    image: '/Paint/20kg-distemper-ccd.webp',
     accent: 'from-slate-900 via-slate-800 to-primary/80',
     imageBg: 'bg-slate-900',
   },
@@ -52,7 +52,7 @@ const slides = [
     subtitle: <><Mark>PPCP</Mark> containers from 500ml to 20L — flat lid and <Mark>spout closures</Mark> for engine oils and industrial lubricants.</>,
     cta: 'View Lubricants Range',
     ctaLink: '/products?category=lubricants',
-    image: '/Lubricants/ML 20_Spout.jpg',
+    image: '/Lubricants/ML 20_Spout.webp',
     accent: 'from-slate-900 via-orange-950 to-orange-900/60',
     imageBg: 'bg-orange-950',
   },
@@ -145,6 +145,8 @@ const HeroSection = () => {
             <img
               src={slide.image}
               alt={slide.badge}
+              width="600"
+              height="600"
               className="h-full max-h-56 w-auto object-contain"
               style={{ filter: 'drop-shadow(0 20px 40px rgba(0,0,0,0.5))' }}
             />
@@ -241,6 +243,8 @@ const HeroSection = () => {
             <img
               src={slide.image}
               alt={slide.badge}
+              width="600"
+              height="600"
               className="w-full h-auto object-contain"
               style={{ filter: 'drop-shadow(0 30px 60px rgba(0,0,0,0.6))' }}
             />

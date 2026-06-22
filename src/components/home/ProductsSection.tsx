@@ -7,19 +7,19 @@ const categories = [
   {
     title: 'Paint Containers',
     description: 'Paint packaging from 1Ltr to 20Ltr with flat lid and CCD closure options.',
-    image: '/Paint/20kg-distemper-ccd.jpg',
+    image: '/Paint/20kg-distemper-ccd.webp',
     link: '/products?category=paint',
   },
   {
     title: 'Food Grade',
     description: 'BPA-free, food-safe round containers from 1000ml to 20Ltr for dairy, oils, and FMCG.',
-    image: '/Food Grade/MRJ_10kg-round.jpg',
+    image: '/Food Grade/MRJ_10kg-round.webp',
     link: '/products?category=food',
   },
   {
     title: 'Lubricants',
     description: 'PPCP containers with flat and spout closures for engine oils and industrial lubricants.',
-    image: '/Lubricants/ML 20_Spout.jpg',
+    image: '/Lubricants/ML 20_Spout.webp',
     link: '/products?category=lubricants',
   },
 ];
@@ -53,6 +53,9 @@ const ProductsSection = () => {
                     <img
                       src={cat.image}
                       alt={cat.title}
+                      loading="lazy"
+                      width="400"
+                      height="300"
                       className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>

@@ -4,7 +4,7 @@ slug: food-grade-plastic-edible-oil-containers
 description: Food-grade plastic means the resin, colorants, and additives used
   in manufacturing the container comply with regulatory standards confirming no
   harmful substances will migrate into food or edible oils. In India, this is
-  governed by IS 10146.
+  governed by IS 10146 and FSSAI.
 category: Food Grade
 date: 2026-03-19
 readTime: 4

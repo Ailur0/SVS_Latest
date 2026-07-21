@@ -5,6 +5,10 @@
     <meta name="robots" content="noindex" />
     <title>Content Manager – SVS Polymer Industries</title>
     <link rel="icon" type="image/webp" href="/logo.webp" />
+    <!-- Absolute path avoids a relative-URL bug: visiting /admin (no trailing
+         slash) makes the browser resolve a relative config.yml fetch against
+         site root instead of /admin/, returning the SPA's index.html. -->
+    <link href="/admin/config.yml" type="text/yaml" rel="cms-config-url" />
   </head>
   <body>
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>

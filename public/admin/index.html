@@ -9,6 +9,16 @@
          slash) makes the browser resolve a relative config.yml fetch against
          site root instead of /admin/, returning the SPA's index.html. -->
     <link href="/admin/config.yml" type="text/yaml" rel="cms-config-url" />
+    <style>
+      /* Decap's login screen bakes in a "powered by" credit badge as an inline
+         SVG (its component is still internally named NetlifyCreditIcon, a
+         holdover from Decap's fork of Netlify CMS). There's no config flag to
+         turn it off, and it overlaps the "back to site" link, so hide it by
+         its stable friendly class name. */
+      span[class*='NetlifyCreditIcon'] {
+        display: none !important;
+      }
+    </style>
   </head>
   <body>
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>

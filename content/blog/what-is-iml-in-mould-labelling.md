@@ -1,3 +1,22 @@
+---
+title: What Is IML (In-Mould Labelling) and Why Are FMCG Brands Switching to It?
+slug: what-is-iml-in-mould-labelling
+description: IML is a decoration process where a pre-printed plastic label is placed inside the injection mould before the container is formed — the molten plastic fuses with the label during moulding. FMCG brands adopt it for premium shelf aesthetics, no label peel, and compatibility with PP recycling streams.
+category: Manufacturing
+date: '2026-03-19'
+readTime: 4
+order: 11
+faqs:
+  - question: What does IML stand for in plastic packaging?
+    answer: IML stands for In-Mould Labelling. It is a container decoration process where a pre-printed plastic label is permanently fused into the container surface during the injection moulding process, eliminating the need for a separate labelling step and creating a label that cannot peel, lift, or bubble.
+  - question: Is IML more expensive than self-adhesive labelling?
+    answer: The per-unit cost of an IML container is higher than a plain container with a self-adhesive label when comparing production cost alone. However, IML eliminates the labelling line (capital, labour, and maintenance), reduces label waste, and improves line efficiency. The total cost of ownership is competitive at volumes above approximately 300,000 units per SKU annually.
+  - question: Can IML containers be recycled?
+    answer: Yes. When the IML label is made from PP film (the same material as the container), the decorated container is effectively mono-material polypropylene and can enter the PP (#5) recycling stream without contamination. This is a significant recyclability advantage over containers labelled with PET or metalised film labels.
+  - question: What print quality is achievable with IML?
+    answer: IML labels are printed using offset, gravure, or digital printing on high-quality BOPP or PP film, achieving photographic-quality results with sharp colour reproduction, fine detail, and consistent registration. The moulding process does not degrade print quality — the finished container typically looks better than any other labelling method because there are no surface texture discontinuities or edge effects.
+---
+
 # What Is IML (In-Mould Labelling) and Why Are FMCG Brands Switching to It?
 
 **IML (In-Mould Labelling) is a decoration process where a pre-printed plastic label is placed inside the injection mould before the container is formed — the molten plastic fuses with the label during moulding, creating a container where the label is permanently bonded into the surface. FMCG brands are adopting it because it delivers premium shelf aesthetics, eliminates label peel and moisture lift, and is compatible with PP recycling streams.**
@@ -76,17 +95,3 @@ Explore our [IML-compatible container range →](https://www.svspolymerinds.com/
 [Request a Quote →](https://www.svspolymerinds.com/contact)
 
 ---
-
-## Frequently Asked Questions
-
-**Q1. What does IML stand for in plastic packaging?**
-IML stands for In-Mould Labelling. It is a container decoration process where a pre-printed plastic label is permanently fused into the container surface during the injection moulding process, eliminating the need for a separate labelling step and creating a label that cannot peel, lift, or bubble.
-
-**Q2. Is IML more expensive than self-adhesive labelling?**
-The per-unit cost of an IML container is higher than a plain container with a self-adhesive label when comparing production cost alone. However, IML eliminates the labelling line (capital, labour, and maintenance), reduces label waste, and improves line efficiency. The total cost of ownership is competitive at volumes above approximately 300,000 units per SKU annually.
-
-**Q3. Can IML containers be recycled?**
-Yes. When the IML label is made from PP film (the same material as the container), the decorated container is effectively mono-material polypropylene and can enter the PP (#5) recycling stream without contamination. This is a significant recyclability advantage over containers labelled with PET or metalised film labels.
-
-**Q4. What print quality is achievable with IML?**
-IML labels are printed using offset, gravure, or digital printing on high-quality BOPP or PP film, achieving photographic-quality results with sharp colour reproduction, fine detail, and consistent registration. The moulding process does not degrade print quality — the finished container typically looks better than any other labelling method because there are no surface texture discontinuities or edge effects.

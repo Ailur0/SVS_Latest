@@ -1,3 +1,22 @@
+---
+title: 'How to Spec a Custom Plastic Container: 5 Things to Tell Your Manufacturer'
+slug: how-to-spec-custom-plastic-container
+description: 'To get an accurate quote and a container that works for your product, provide five pieces of information: required capacity and dimensions, neck finish and closure type, wall thickness or stacking load requirement, colour and decoration method, and material specification.'
+category: Procurement
+date: '2026-03-19'
+readTime: 3
+order: 9
+faqs:
+  - question: What happens if I don't know the exact wall thickness I need?
+    answer: That is normal — most buyers don't specify wall thickness directly. Share your stacking load and drop test requirements instead, and your manufacturer's design team will calculate the required wall geometry. If you have an existing container you want to match or improve on, share a sample for reverse engineering.
+  - question: Do I need a technical drawing to get a quote?
+    answer: Not necessarily. A detailed written brief with the five parameters above, plus a reference sketch or sample, is usually sufficient for a budgetary quote. A dimensional drawing (2D or 3D) is required before mould fabrication begins, and most manufacturers can assist with drawing preparation if you provide the functional requirements.
+  - question: How long does it take from spec approval to first production batch?
+    answer: 'For new custom containers: 8–14 weeks from spec approval to first production batch (includes mould fabrication, T1 trial, modifications if needed, and production ramp-up). For standard containers from existing moulds: 2–4 weeks from order confirmation.'
+  - question: Can I make changes to the design after the mould is built?
+    answer: Minor changes (small dimension adjustments, adding text or embossing) can be made to an existing mould at relatively low cost. Major changes (significant shape modifications, neck finish changes, capacity changes) typically require a new mould. This is why getting the spec right before tooling is critical — always validate a pre-production sample before approving mould fabrication.
+---
+
 # How to Spec a Custom Plastic Container: 5 Things to Tell Your Manufacturer
 
 **To get an accurate quote and a container that works for your product, you need to provide five pieces of information: the required capacity and dimensions, the neck finish and closure type, the wall thickness or stacking load requirement, the colour and decoration method, and the material specification. Missing any one of these leads to rework, delays, and misaligned costs.**
@@ -76,17 +95,3 @@ Explore our [custom container development process →](https://www.svspolymerind
 [Request a Quote →](https://www.svspolymerinds.com/contact)
 
 ---
-
-## Frequently Asked Questions
-
-**Q1. What happens if I don't know the exact wall thickness I need?**
-That is normal — most buyers don't specify wall thickness directly. Share your stacking load and drop test requirements instead, and your manufacturer's design team will calculate the required wall geometry. If you have an existing container you want to match or improve on, share a sample for reverse engineering.
-
-**Q2. Do I need a technical drawing to get a quote?**
-Not necessarily. A detailed written brief with the five parameters above, plus a reference sketch or sample, is usually sufficient for a budgetary quote. A dimensional drawing (2D or 3D) is required before mould fabrication begins, and most manufacturers can assist with drawing preparation if you provide the functional requirements.
-
-**Q3. How long does it take from spec approval to first production batch?**
-For new custom containers: 8–14 weeks from spec approval to first production batch (includes mould fabrication, T1 trial, modifications if needed, and production ramp-up). For standard containers from existing moulds: 2–4 weeks from order confirmation.
-
-**Q4. Can I make changes to the design after the mould is built?**
-Minor changes (small dimension adjustments, adding text or embossing) can be made to an existing mould at relatively low cost. Major changes (significant shape modifications, neck finish changes, capacity changes) typically require a new mould. This is why getting the spec right before tooling is critical — always validate a pre-production sample before approving mould fabrication.

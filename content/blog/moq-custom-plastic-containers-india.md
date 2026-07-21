@@ -1,3 +1,22 @@
+---
+title: What Is the Minimum Order Quantity for Custom Plastic Containers in India?
+slug: moq-custom-plastic-containers-india
+description: For standard-size PPCP containers using existing moulds, minimum order quantities in India typically start at 500–1,000 units per SKU. For custom sizes requiring new mould development, MOQs are higher — usually 2,000–5,000 units — to recover tooling investment.
+category: Procurement
+date: '2026-03-19'
+readTime: 3
+order: 7
+faqs:
+  - question: Can I order a sample before committing to MOQ?
+    answer: Yes. Most Indian container manufacturers offer pre-production samples from existing moulds at a nominal cost. For custom moulds, a sample (T1 trial shot) is typically provided after mould fabrication and before full production approval. Discuss sample requirements and costs during the quotation stage.
+  - question: Who owns the mould — the buyer or the manufacturer?
+    answer: This is negotiable. If the buyer pays for mould fabrication, they typically own the mould and can move production to another manufacturer. If the manufacturer bears the tooling cost, they retain ownership and the buyer is tied to that supplier for the container. Clarify mould ownership in writing before proceeding.
+  - question: How long does it take to develop a new custom mould in India?
+    answer: Standard injection moulds for containers take 6–12 weeks from design approval to first trial samples, depending on complexity and the manufacturer's fabrication capacity. Complex multi-cavity moulds or containers with undercuts and integrated handles may take 12–16 weeks.
+  - question: What is the price difference between standard and custom containers?
+    answer: Standard containers from existing moulds are significantly cheaper per unit — often 20–40% lower — because there is no tooling cost to amortise. Custom containers justify the premium when your product requires a specific shape, closure, or capacity that standard sizes cannot provide, or when branded differentiation is a commercial priority.
+---
+
 # What Is the Minimum Order Quantity for Custom Plastic Containers in India?
 
 **For standard-size PPCP containers using existing moulds, minimum order quantities (MOQ) in India typically start at 500–1,000 units per SKU. For custom sizes requiring new mould development, MOQs are higher — usually 2,000–5,000 units — to recover tooling investment, though this varies by manufacturer and container complexity.**
@@ -61,17 +80,3 @@ Explore our [standard container range →](https://www.svspolymerinds.com/produc
 [Request a Quote →](https://www.svspolymerinds.com/contact)
 
 ---
-
-## Frequently Asked Questions
-
-**Q1. Can I order a sample before committing to MOQ?**
-Yes. Most Indian container manufacturers offer pre-production samples from existing moulds at a nominal cost. For custom moulds, a sample (T1 trial shot) is typically provided after mould fabrication and before full production approval. Discuss sample requirements and costs during the quotation stage.
-
-**Q2. Who owns the mould — the buyer or the manufacturer?**
-This is negotiable. If the buyer pays for mould fabrication, they typically own the mould and can move production to another manufacturer. If the manufacturer bears the tooling cost, they retain ownership and the buyer is tied to that supplier for the container. Clarify mould ownership in writing before proceeding.
-
-**Q3. How long does it take to develop a new custom mould in India?**
-Standard injection moulds for containers take 6–12 weeks from design approval to first trial samples, depending on complexity and the manufacturer's fabrication capacity. Complex multi-cavity moulds or containers with undercuts and integrated handles may take 12–16 weeks.
-
-**Q4. What is the price difference between standard and custom containers?**
-Standard containers from existing moulds are significantly cheaper per unit — often 20–40% lower — because there is no tooling cost to amortise. Custom containers justify the premium when your product requires a specific shape, closure, or capacity that standard sizes cannot provide, or when branded differentiation is a commercial priority.

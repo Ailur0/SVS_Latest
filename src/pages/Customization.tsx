@@ -8,77 +8,39 @@ import { ScrollAnimation } from '@/components/ui/scroll-animation';
 import { useToast } from '@/hooks/use-toast';
 import { useNavigate } from 'react-router-dom';
 import PageHeader from '@/components/ui/page-header';
+import { customization } from '@/data/pageContent';
+
+const SERVICE_ICONS = [Palette, Printer, Package, Layers];
 
 const Customization = () => {
   const { toast } = useToast();
   const navigate = useNavigate();
-  
-  const services = [
-    {
-      icon: Palette,
-      title: 'Custom Colors',
-      description: 'Choose from unlimited color options to match your brand identity perfectly.',
-      features: ['Pantone color matching', 'Multi-color options', 'Metallic finishes', 'UV resistant colors'],
-    },
-    {
-      icon: Printer,
-      title: 'Custom Printing & Labeling',
-      description: 'High-quality printing solutions for your branding needs.',
-      features: ['Screen printing', 'Heat transfer', 'Offset printing', 'Custom label design'],
-    },
-    {
-      icon: Package,
-      title: 'Custom Sizes & Shapes',
-      description: 'Tailored dimensions and designs to fit your specific requirements.',
-      features: ['Custom capacities', 'Unique shapes', 'Special lids', 'Handle variations'],
-    },
-  ];
 
-  const process = [
-    {
-      step: 1,
-      title: 'Initial Consultation',
-      description: 'Discuss your requirements with our design team',
-    },
-    {
-      step: 2,
-      title: 'Design & Prototyping',
-      description: 'Create designs and develop prototypes for approval',
-    },
-    {
-      step: 3,
-      title: 'Sample Production',
-      description: 'Produce samples for testing and validation',
-    },
-    {
-      step: 4,
-      title: 'Mass Production',
-      description: 'Full-scale production with quality assurance',
-    },
-    {
-      step: 5,
-      title: 'Delivery',
-      description: 'Timely delivery of your custom products',
-    },
-  ];
+  const services = customization.services.map((service, index) => ({
+    ...service,
+    icon: SERVICE_ICONS[index] ?? Package,
+  }));
+
+  const process = customization.process.map((item, index) => ({
+    ...item,
+    step: index + 1,
+  }));
 
   return (
     <div className="min-h-screen bg-background">
       <Header />
       <main className="">
-        <PageHeader title="Custom Packaging Solutions" subtitle="Custom colours, sizes, closures, and printing — built to your exact specifications." />
+        <PageHeader title={customization.heroTitle} subtitle={customization.heroSubtitle} />
 
         {/* Introduction */}
         <section className="py-12">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="font-heading text-3xl font-bold text-foreground mb-6">
-                Your Brand, Your Way
+                {customization.introHeading}
               </h2>
               <p className="text-lg text-muted-foreground mb-8">
-                Stand out in the market with custom packaging solutions tailored to your brand.
-                From custom colors and printing to unique shapes and sizes, we bring your vision
-                to life with precision and quality.
+                {customization.introText}
               </p>
             </div>
           </div>
@@ -166,9 +128,7 @@ const Customization = () => {
                 className="w-full rounded-lg shadow-large mb-8"
               />
               <p className="text-center text-muted-foreground mb-8">
-                We've successfully delivered custom packaging solutions for leading brands
-                across various industries. From vibrant colors to unique designs, our
-                expertise brings your packaging vision to life.
+                {customization.portfolioText}
               </p>
               <div className="text-center">
                 <Button variant="default" size="lg" onClick={() => {

@@ -5,63 +5,33 @@ import { CheckCircle, Award, Shield, FileCheck } from 'lucide-react';
 import qualityLab from '@/assets/quality-lab.jpg';
 import { ScrollAnimation } from '@/components/ui/scroll-animation';
 import PageHeader from '@/components/ui/page-header';
+import { quality } from '@/data/pageContent';
+
+const CERTIFICATION_ICONS = [Award, Shield, FileCheck, CheckCircle];
 
 const Quality = () => {
-  const certifications = [
-    {
-      name: 'ISO 9001:2015',
-      description: 'Quality Management System certification ensuring consistent quality',
-      icon: Award,
-    },
-    {
-      name: 'ISO 14001:2015',
-      description: 'Environmental Management System for sustainable operations',
-      icon: Shield,
-    },
-    {
-      name: 'FDA Approved',
-      description: 'Food and Drug Administration approval for food-grade products',
-      icon: FileCheck,
-    },
-    {
-      name: 'BIS Standards',
-      description: 'Bureau of Indian Standards compliance for all products',
-      icon: CheckCircle,
-    },
-  ];
+  const certifications = quality.certifications.map((cert, index) => ({
+    ...cert,
+    icon: CERTIFICATION_ICONS[index] ?? CheckCircle,
+  }));
 
-  const testingProcedures = [
-    'Raw Material Inspection',
-    'In-Process Quality Checks',
-    'Dimensional Accuracy Testing',
-    'Leak and Pressure Testing',
-    'Drop Impact Testing',
-    'Chemical Resistance Testing',
-    'UV Stability Testing',
-    'Final Product Inspection',
-  ];
+  const testingProcedures = quality.testingProcedures;
 
   return (
     <div className="min-h-screen bg-background">
       <Header />
       <main className="">
-        <PageHeader title="Our Commitment to Quality" subtitle="Every product undergoes rigorous testing before it leaves our facility." />
+        <PageHeader title={quality.heroTitle} subtitle={quality.heroSubtitle} />
 
         {/* Introduction */}
         <section className="py-12">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <p className="text-lg text-muted-foreground mb-8">
-                At SVS Polymer Industries, quality is not just a department—it's a company-wide
-                commitment that drives everything we do. From raw material selection to final
-                product delivery, we maintain the highest standards of quality control and
-                assurance to ensure our customers receive products that exceed expectations.
-              </p>
-              <p className="text-lg text-muted-foreground">
-                Our state-of-the-art quality control laboratory is equipped with advanced testing
-                equipment and staffed by experienced professionals who ensure every product meets
-                stringent quality parameters before leaving our facility.
-              </p>
+              {quality.introParagraphs.map((paragraph, index) => (
+                <p key={index} className="text-lg text-muted-foreground mb-8 last:mb-0">
+                  {paragraph}
+                </p>
+              ))}
             </div>
           </div>
         </section>
@@ -140,62 +110,21 @@ const Quality = () => {
             </h2>
             <div className="max-w-4xl mx-auto">
               <div className="space-y-6">
-                <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold">
-                    1
+                {quality.qaSteps.map((step, index) => (
+                  <div key={step.title} className="flex gap-4">
+                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold">
+                      {index + 1}
+                    </div>
+                    <div>
+                      <h3 className="font-heading text-xl font-semibold mb-2">
+                        {step.title}
+                      </h3>
+                      <p className="text-muted-foreground">
+                        {step.description}
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="font-heading text-xl font-semibold mb-2">
-                      Raw Material Selection
-                    </h3>
-                    <p className="text-muted-foreground">
-                      We source only the highest quality virgin and food-grade plastics from
-                      certified suppliers, ensuring consistency and safety.
-                    </p>
-                  </div>
-                </div>
-                <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold">
-                    2
-                  </div>
-                  <div>
-                    <h3 className="font-heading text-xl font-semibold mb-2">
-                      Production Monitoring
-                    </h3>
-                    <p className="text-muted-foreground">
-                      Continuous monitoring during production with real-time quality checks
-                      ensures adherence to specifications.
-                    </p>
-                  </div>
-                </div>
-                <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold">
-                    3
-                  </div>
-                  <div>
-                    <h3 className="font-heading text-xl font-semibold mb-2">
-                      Testing & Validation
-                    </h3>
-                    <p className="text-muted-foreground">
-                      Comprehensive testing including physical, chemical, and performance tests
-                      validate product quality.
-                    </p>
-                  </div>
-                </div>
-                <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold">
-                    4
-                  </div>
-                  <div>
-                    <h3 className="font-heading text-xl font-semibold mb-2">
-                      Final Inspection
-                    </h3>
-                    <p className="text-muted-foreground">
-                      100% inspection of finished products before packaging and dispatch
-                      ensures zero defects reach our customers.
-                    </p>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
           </div>

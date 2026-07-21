@@ -25,33 +25,6 @@ function slugify(text: string) {
   return text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 }
 
-function extractFAQs(content: string): Array<{ question: string; answer: string }> {
-  const faqs: Array<{ question: string; answer: string }> = [];
-  const lines = content.split('\n');
-  let i = 0;
-  while (i < lines.length) {
-    const line = lines[i].trim();
-    const qMatch = line.match(/^\*\*Q\d+\.\s*(.+?)\*\*$/);
-    if (qMatch) {
-      const question = qMatch[1].replace(/\?$/, '') + '?';
-      const answerLines: string[] = [];
-      i++;
-      while (i < lines.length) {
-        const next = lines[i].trim();
-        if (next.match(/^\*\*Q\d+\./) || next.startsWith('##') || next.startsWith('---')) break;
-        if (next) answerLines.push(next);
-        i++;
-      }
-      if (answerLines.length > 0) {
-        faqs.push({ question, answer: answerLines.join(' ').replace(/\*\*/g, '') });
-      }
-    } else {
-      i++;
-    }
-  }
-  return faqs;
-}
-
 function extractHeadings(content: string): Array<{ text: string; id: string }> {
   return content
     .split('\n')
@@ -60,13 +33,6 @@ function extractHeadings(content: string): Array<{ text: string; id: string }> {
       const text = line.replace(/^## /, '').trim();
       return { text, id: slugify(text) };
     });
-}
-
-/** Split content before FAQ section so we render FAQs separately */
-function splitContent(content: string): { body: string; hasFaq: boolean } {
-  const faqIndex = content.indexOf('\n## Frequently Asked Questions');
-  if (faqIndex === -1) return { body: content, hasFaq: false };
-  return { body: content.slice(0, faqIndex), hasFaq: true };
 }
 
 function resolveHref(href: string): { to?: string; href?: string } {
@@ -159,9 +125,9 @@ export default function BlogPost() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const articleRef = useRef<HTMLElement>(null);
 
-  const faqs = useMemo(() => post ? extractFAQs(post.content) : [], [post]);
+  const faqs = useMemo(() => post?.faqs ?? [], [post]);
   const headings = useMemo(() => post ? extractHeadings(post.content) : [], [post]);
-  const { body } = useMemo(() => post ? splitContent(post.content) : { body: '', hasFaq: false }, [post]);
+  const body = post?.content ?? '';
 
   const relatedPosts = useMemo(() =>
     post ? blogPosts.filter(p => p.slug !== post.slug && p.category === post.category).slice(0, 3) : [],

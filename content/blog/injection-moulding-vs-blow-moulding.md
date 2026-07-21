@@ -1,3 +1,22 @@
+---
+title: 'Injection Moulding vs Blow Moulding: Which Process Makes Better Containers?'
+slug: injection-moulding-vs-blow-moulding
+description: Injection moulding produces better rigid containers — jars, tubs, buckets, and wide-mouth containers — with precise wall thickness, superior structural strength, and consistent dimensions. Blow moulding is the correct process for narrow-neck bottles and large tanks.
+category: Manufacturing
+date: '2026-03-19'
+readTime: 4
+order: 6
+faqs:
+  - question: Which process is cheaper — injection moulding or blow moulding?
+    answer: Tooling costs for injection moulds are generally higher than blow moulds for equivalent container sizes. However, injection moulding typically has faster cycle times and lower per-unit costs at volume. Total cost comparison depends on container geometry, annual volume, and material weight — evaluate on a per-unit basis, not tooling cost alone.
+  - question: Is injection moulding stronger than blow moulding for the same plastic?
+    answer: Yes, for equivalent wall thickness and material grade. Injection moulding produces more uniform wall thickness and eliminates the variable wall thinning that can occur at corners and shoulders in blow-moulded containers. This results in more predictable and higher structural performance under stacking and impact conditions.
+  - question: Can injection moulded containers have handles?
+    answer: Yes. Integral handles can be designed into injection moulded containers as part of the mould, or separate snap-on handles can be added post-moulding. Both approaches are common for 5L, 10L, and 20L industrial containers where carrying comfort is important.
+  - question: What plastics can be used in injection moulding for containers?
+    answer: The most common materials for injection-moulded industrial containers are PPCP, homopolymer PP, HDPE, and for speciality applications, PET and ABS. PPCP is the dominant material for paint buckets, lubricant containers, and chemical pails in the Indian market due to its balance of toughness, weight, and processability.
+---
+
 # Injection Moulding vs Blow Moulding: Which Process Makes Better Containers?
 
 **Injection moulding produces better rigid containers — jars, tubs, buckets, and wide-mouth containers — with precise wall thickness, superior structural strength, and consistent dimensions. Blow moulding is the correct process for narrow-neck bottles and large tanks where a one-piece hollow form is required.**
@@ -69,17 +88,3 @@ Explore our [injection-moulded rigid container range →](https://www.svspolymer
 [Request a Quote →](https://www.svspolymerinds.com/contact)
 
 ---
-
-## Frequently Asked Questions
-
-**Q1. Which process is cheaper — injection moulding or blow moulding?**
-Tooling costs for injection moulds are generally higher than blow moulds for equivalent container sizes. However, injection moulding typically has faster cycle times and lower per-unit costs at volume. Total cost comparison depends on container geometry, annual volume, and material weight — evaluate on a per-unit basis, not tooling cost alone.
-
-**Q2. Is injection moulding stronger than blow moulding for the same plastic?**
-Yes, for equivalent wall thickness and material grade. Injection moulding produces more uniform wall thickness and eliminates the variable wall thinning that can occur at corners and shoulders in blow-moulded containers. This results in more predictable and higher structural performance under stacking and impact conditions.
-
-**Q3. Can injection moulded containers have handles?**
-Yes. Integral handles can be designed into injection moulded containers as part of the mould, or separate snap-on handles can be added post-moulding. Both approaches are common for 5L, 10L, and 20L industrial containers where carrying comfort is important.
-
-**Q4. What plastics can be used in injection moulding for containers?**
-The most common materials for injection-moulded industrial containers are PPCP, homopolymer PP, HDPE, and for speciality applications, PET and ABS. PPCP is the dominant material for paint buckets, lubricant containers, and chemical pails in the Indian market due to its balance of toughness, weight, and processability.

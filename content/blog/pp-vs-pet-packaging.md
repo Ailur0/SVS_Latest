@@ -1,3 +1,22 @@
+---
+title: 'PP vs PET: Which Plastic Is Right for Your Product Packaging?'
+slug: pp-vs-pet-packaging
+description: PP is better for rigid industrial containers, chemical packaging, and applications requiring heat resistance or wide-mouth formats. PET is better for transparent bottles and applications where clarity and gas barrier properties are critical. For most B2B industrial packaging, PP is the more versatile choice.
+category: Materials
+date: '2026-03-19'
+readTime: 4
+order: 8
+faqs:
+  - question: Is PP or PET safer for food contact?
+    answer: Both PP and PET are approved for food contact under Indian and international regulations when manufactured with food-grade additives. PP (IS 10146) is preferred for hot-fill and wide-mouth applications; PET is preferred for cold-fill beverages and edible oils in bottle format. Neither is inherently "safer" — both are widely used and well-studied for food safety.
+  - question: Which plastic is more recyclable — PP or PET?
+    answer: PET (#1) has the highest collection and recycling rates globally and in India because of its high demand in the recycled PET (rPET) market. PP (#5) is recyclable but has lower collection rates due to less developed end-market infrastructure in India. Both materials are technically recyclable; PET currently has a stronger recycling ecosystem.
+  - question: Why is PET more expensive than PP?
+    answer: PET is derived from purified terephthalic acid (PTA) and ethylene glycol — both petroleum derivatives with more processing steps than propylene. PP's simpler monomer supply chain and polymerisation process result in consistently lower resin prices. The cost gap varies with crude oil prices but PP typically costs 15–25% less per kg than PET in the Indian market.
+  - question: Can you make a 20L container in PET?
+    answer: Large-format PET containers (10L–20L) are technically possible but uncommon in India due to high tooling cost for large stretch blow moulds, thicker wall requirements that reduce weight advantage, and the superior stacking performance of injection-moulded PP at large sizes. For containers above 5L, injection-moulded PP is almost always the practical and economic choice.
+---
+
 # PP vs PET: Which Plastic Is Right for Your Product Packaging?
 
 **PP (Polypropylene) is better for rigid industrial containers, chemical packaging, and applications requiring heat resistance or wide-mouth formats. PET (Polyethylene Terephthalate) is better for transparent bottles, carbonated beverages, and applications where clarity and gas barrier properties are critical. For most B2B industrial and FMCG packaging, PP — particularly PPCP — is the more versatile and cost-effective choice.**
@@ -62,17 +81,3 @@ Explore our [PP and PPCP rigid container range →](https://www.svspolymerinds.c
 [Request a Quote →](https://www.svspolymerinds.com/contact)
 
 ---
-
-## Frequently Asked Questions
-
-**Q1. Is PP or PET safer for food contact?**
-Both PP and PET are approved for food contact under Indian and international regulations when manufactured with food-grade additives. PP (IS 10146) is preferred for hot-fill and wide-mouth applications; PET is preferred for cold-fill beverages and edible oils in bottle format. Neither is inherently "safer" — both are widely used and well-studied for food safety.
-
-**Q2. Which plastic is more recyclable — PP or PET?**
-PET (#1) has the highest collection and recycling rates globally and in India because of its high demand in the recycled PET (rPET) market. PP (#5) is recyclable but has lower collection rates due to less developed end-market infrastructure in India. Both materials are technically recyclable; PET currently has a stronger recycling ecosystem.
-
-**Q3. Why is PET more expensive than PP?**
-PET is derived from purified terephthalic acid (PTA) and ethylene glycol — both petroleum derivatives with more processing steps than propylene. PP's simpler monomer supply chain and polymerisation process result in consistently lower resin prices. The cost gap varies with crude oil prices but PP typically costs 15–25% less per kg than PET in the Indian market.
-
-**Q4. Can you make a 20L container in PET?**
-Large-format PET containers (10L–20L) are technically possible but uncommon in India due to high tooling cost for large stretch blow moulds, thicker wall requirements that reduce weight advantage, and the superior stacking performance of injection-moulded PP at large sizes. For containers above 5L, injection-moulded PP is almost always the practical and economic choice.

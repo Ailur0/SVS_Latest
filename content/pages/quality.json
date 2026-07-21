@@ -1,0 +1,54 @@
+{
+  "heroTitle": "Our Commitment to Quality",
+  "heroSubtitle": "Every product undergoes rigorous testing before it leaves our facility.",
+  "introParagraphs": [
+    "At SVS Polymer Industries, quality is not just a department—it's a company-wide commitment that drives everything we do. From raw material selection to final product delivery, we maintain the highest standards of quality control and assurance to ensure our customers receive products that exceed expectations.",
+    "Our state-of-the-art quality control laboratory is equipped with advanced testing equipment and staffed by experienced professionals who ensure every product meets stringent quality parameters before leaving our facility."
+  ],
+  "certifications": [
+    {
+      "name": "ISO 9001:2015",
+      "description": "Quality Management System certification ensuring consistent quality"
+    },
+    {
+      "name": "ISO 14001:2015",
+      "description": "Environmental Management System for sustainable operations"
+    },
+    {
+      "name": "FDA Approved",
+      "description": "Food and Drug Administration approval for food-grade products"
+    },
+    {
+      "name": "BIS Standards",
+      "description": "Bureau of Indian Standards compliance for all products"
+    }
+  ],
+  "testingProcedures": [
+    "Raw Material Inspection",
+    "In-Process Quality Checks",
+    "Dimensional Accuracy Testing",
+    "Leak and Pressure Testing",
+    "Drop Impact Testing",
+    "Chemical Resistance Testing",
+    "UV Stability Testing",
+    "Final Product Inspection"
+  ],
+  "qaSteps": [
+    {
+      "title": "Raw Material Selection",
+      "description": "We source only the highest quality virgin and food-grade plastics from certified suppliers, ensuring consistency and safety."
+    },
+    {
+      "title": "Production Monitoring",
+      "description": "Continuous monitoring during production with real-time quality checks ensures adherence to specifications."
+    },
+    {
+      "title": "Testing & Validation",
+      "description": "Comprehensive testing including physical, chemical, and performance tests validate product quality."
+    },
+    {
+      "title": "Final Inspection",
+      "description": "100% inspection of finished products before packaging and dispatch ensures zero defects reach our customers."
+    }
+  ]
+}

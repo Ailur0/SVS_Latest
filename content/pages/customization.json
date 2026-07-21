@@ -1,0 +1,46 @@
+{
+  "heroTitle": "Custom Packaging Solutions",
+  "heroSubtitle": "Custom colours, sizes, closures, and printing — built to your exact specifications.",
+  "introHeading": "Your Brand, Your Way",
+  "introText": "Stand out in the market with custom packaging solutions tailored to your brand. From custom colors and printing to unique shapes and sizes, we bring your vision to life with precision and quality.",
+  "services": [
+    {
+      "title": "Custom Colors",
+      "description": "Choose from unlimited color options to match your brand identity perfectly.",
+      "features": ["Pantone color matching", "Multi-color options", "Metallic finishes", "UV resistant colors"]
+    },
+    {
+      "title": "Custom Printing & Labeling",
+      "description": "High-quality printing solutions for your branding needs.",
+      "features": ["Screen printing", "Heat transfer", "Offset printing", "Custom label design"]
+    },
+    {
+      "title": "Custom Sizes & Shapes",
+      "description": "Tailored dimensions and designs to fit your specific requirements.",
+      "features": ["Custom capacities", "Unique shapes", "Special lids", "Handle variations"]
+    }
+  ],
+  "process": [
+    {
+      "title": "Initial Consultation",
+      "description": "Discuss your requirements with our design team"
+    },
+    {
+      "title": "Design & Prototyping",
+      "description": "Create designs and develop prototypes for approval"
+    },
+    {
+      "title": "Sample Production",
+      "description": "Produce samples for testing and validation"
+    },
+    {
+      "title": "Mass Production",
+      "description": "Full-scale production with quality assurance"
+    },
+    {
+      "title": "Delivery",
+      "description": "Timely delivery of your custom products"
+    }
+  ],
+  "portfolioText": "We've successfully delivered custom packaging solutions for leading brands across various industries. From vibrant colors to unique designs, our expertise brings your packaging vision to life."
+}

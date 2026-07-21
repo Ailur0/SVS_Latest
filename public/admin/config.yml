@@ -1,0 +1,214 @@
+backend:
+  name: github
+  repo: Ailur0/SVS_Latest
+  branch: main
+  base_url: https://www.svspolymerinds.com
+  auth_endpoint: api/auth
+
+# Lets `npx decap-server` + `npm run dev` power a full local preview against
+# real repo content, with no GitHub auth needed — safe to leave on, it only
+# activates when both the app and the proxy are reached via localhost.
+local_backend: true
+
+logo:
+  src: /logo.webp
+  show_in_header: true
+
+site_url: https://www.svspolymerinds.com
+display_url: https://www.svspolymerinds.com
+
+publish_mode: simple
+
+media_folder: public/uploads
+public_folder: /uploads
+
+collections:
+  - name: blog
+    label: Blog Posts
+    label_singular: Blog Post
+    folder: content/blog
+    create: true
+    slug: '{{fields.slug}}'
+    format: frontmatter
+    summary: '{{title}}'
+    sortable_fields: [title, category, date, order]
+    view_groups:
+      - label: Category
+        field: category
+    fields:
+      - { name: title, label: Title, widget: string }
+      - name: slug
+        label: URL Slug
+        widget: string
+        pattern: ['^[a-z0-9]+(-[a-z0-9]+)*$', 'Lowercase letters, numbers, and hyphens only, e.g. my-post-title']
+        hint: 'Must stay identical for existing posts — changing it changes the live /blog/... address and breaks search rankings and shared links.'
+      - { name: description, label: 'Meta Description / Answer Summary', widget: text }
+      - name: category
+        label: Category
+        widget: select
+        options: [Materials, 'Packaging Design', 'Food Grade', Manufacturing, Procurement, Sustainability]
+      - { name: date, label: 'Publish Date', widget: datetime, format: 'YYYY-MM-DD' }
+      - { name: readTime, label: 'Read Time (minutes)', widget: number, value_type: int, min: 1 }
+      - name: order
+        label: Display Order
+        widget: number
+        value_type: int
+        default: 99
+        hint: 'Controls the order posts are listed in and the previous/next article links. Lower numbers show first — new posts default to the end.'
+      - name: faqs
+        label: FAQ Section
+        widget: list
+        collapsed: true
+        summary: '{{fields.question}}'
+        fields:
+          - { name: question, label: Question, widget: string }
+          - { name: answer, label: Answer, widget: text }
+      - name: body
+        label: 'Article Body (Markdown)'
+        widget: markdown
+        media_folder: public/blog-uploads
+        public_folder: /blog-uploads
+
+  - name: products
+    label: Products
+    label_singular: Product
+    folder: content/products
+    create: true
+    slug: '{{fields.id}}'
+    format: frontmatter
+    summary: '{{name}} ({{capacity}})'
+    sortable_fields: [name, category, capacity]
+    view_groups:
+      - label: Category
+        field: category
+    fields:
+      - name: id
+        label: Product ID
+        widget: string
+        pattern: ['^[a-z0-9]+$', 'Lowercase letters and numbers only, e.g. p1']
+        hint: 'e.g. p1 — must stay the same for existing products.'
+      - name: category
+        label: Category
+        widget: select
+        options: [paint, food, lubricants]
+      - { name: name, label: 'Product Name', widget: string }
+      - name: image
+        label: Image
+        widget: image
+        media_folder: /public
+        public_folder: /
+        hint: 'Browse to the existing Paint / Food Grade / Lubricants folder for this category, or upload a new .webp image there (keep it under ~200KB).'
+      - { name: capacity, label: 'Capacity (display text)', widget: string }
+      - name: capacityGroup
+        label: 'Capacity Group (used for filtering)'
+        widget: select
+        options: ['Up to 1L', '1L – 5L', '5L – 10L', '10L+']
+      - name: closure
+        label: Closure
+        widget: select
+        options: ['Flat Lid', 'CCD Closure', 'Round Lid', 'Spout Closure', 'Standard Cap']
+      - { name: features, label: 'Features (shown on product card)', widget: list }
+      - name: tags
+        label: 'Filter Tags'
+        widget: select
+        multiple: true
+        options: ['Tamper Evident', 'BPA Free', 'Stackable', 'Spout Pour', 'Food Safe', 'Chemical Resistant']
+      - { name: applications, label: Applications, widget: string }
+
+  - name: pages
+    label: Static Pages
+    files:
+      - name: about
+        label: About Page
+        file: content/pages/about.json
+        fields:
+          - { name: heroTitle, label: 'Page Title', widget: string }
+          - { name: storyHeading, label: 'Story Heading', widget: string }
+          - name: storyParagraphs
+            label: Story Paragraphs
+            widget: list
+            field: { name: paragraph, widget: text }
+          - name: values
+            label: 'Values Cards'
+            widget: list
+            summary: '{{fields.title}}'
+            fields:
+              - { name: title, widget: string }
+              - { name: description, widget: text }
+          - { name: philosophyHeading, label: 'Philosophy Heading', widget: string }
+          - name: philosophyParagraphs
+            label: 'Philosophy Paragraphs'
+            widget: list
+            field: { name: paragraph, widget: text }
+
+      - name: quality
+        label: Quality Page
+        file: content/pages/quality.json
+        fields:
+          - { name: heroTitle, label: 'Page Title', widget: string }
+          - { name: heroSubtitle, label: Subtitle, widget: string }
+          - name: introParagraphs
+            label: 'Introduction Paragraphs'
+            widget: list
+            field: { name: paragraph, widget: text }
+          - name: certifications
+            label: 'Certifications & Standards'
+            widget: list
+            summary: '{{fields.name}}'
+            fields:
+              - { name: name, widget: string }
+              - { name: description, widget: text }
+          - name: testingProcedures
+            label: 'Testing Procedures'
+            widget: list
+          - name: qaSteps
+            label: 'Quality Assurance Process Steps'
+            widget: list
+            summary: '{{fields.title}}'
+            fields:
+              - { name: title, widget: string }
+              - { name: description, widget: text }
+
+      - name: customization
+        label: Customization Page
+        file: content/pages/customization.json
+        fields:
+          - { name: heroTitle, label: 'Page Title', widget: string }
+          - { name: heroSubtitle, label: Subtitle, widget: string }
+          - { name: introHeading, label: 'Introduction Heading', widget: string }
+          - { name: introText, label: 'Introduction Text', widget: text }
+          - name: services
+            label: 'Customization Services'
+            widget: list
+            summary: '{{fields.title}}'
+            fields:
+              - { name: title, widget: string }
+              - { name: description, widget: text }
+              - name: features
+                label: 'Feature Bullets'
+                widget: list
+          - name: process
+            label: 'Process Steps'
+            widget: list
+            summary: '{{fields.title}}'
+            fields:
+              - { name: title, widget: string }
+              - { name: description, widget: text }
+          - { name: portfolioText, label: 'Portfolio Section Text', widget: text }
+
+      - name: contact
+        label: 'Contact Page (info block only)'
+        file: content/pages/contact.json
+        fields:
+          - { name: heroTitle, label: 'Page Title', widget: string }
+          - { name: heroSubtitle, label: Subtitle, widget: string }
+          - { name: contactPersonName, label: 'Contact Person Name', widget: string }
+          - { name: phone, label: Phone, widget: string }
+          - name: email
+            label: Email
+            widget: string
+            pattern: ['^[^@\s]+@[^@\s]+\.[^@\s]+$', 'Enter a valid email address']
+          - name: addressLines
+            label: 'Address (one line per item)'
+            widget: list
+          - { name: mapEmbedUrl, label: 'Google Maps Embed URL', widget: string }

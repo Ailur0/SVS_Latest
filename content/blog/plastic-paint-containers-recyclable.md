@@ -1,3 +1,22 @@
+---
+title: Are Plastic Paint Containers Recyclable? What Manufacturers Need to Know
+slug: plastic-paint-containers-recyclable
+description: 'Yes, plastic paint containers made from PPCP or HDPE (resin codes #5 and #2) are technically recyclable, but their actual recyclability in India depends on container cleanliness, local waste collection infrastructure, and compliance with Plastic Waste Management Rules and EPR framework.'
+category: Sustainability
+date: '2026-03-19'
+readTime: 4
+order: 10
+faqs:
+  - question: What resin code do PPCP paint containers carry?
+    answer: 'PPCP containers carry resin identification code #5 (PP). This code is moulded into the base of the container and indicates the material is polypropylene. It does not guarantee collection or recycling — that depends on local infrastructure and contamination level.'
+  - question: Do paint manufacturers in India have EPR obligations for plastic containers?
+    answer: Yes. Under the Plastic Waste Management (Amendment) Rules 2022, any producer, importer, or brand owner placing plastic packaging into the Indian market is required to register with CPCB and meet annual EPR collection and recycling targets. Paint containers — being single-use plastic packaging — are covered under this framework.
+  - question: Can post-consumer recycled (PCR) PP be used in new paint containers?
+    answer: Yes, PCR PP (post-consumer recycled polypropylene) can be blended into new containers at various percentages for non-food applications like paint and lubricant containers. Typical inclusion rates are 20–30% PCR without significant performance compromise. Using PCR content also generates additional EPR credits toward your CPCB obligations.
+  - question: How should consumers dispose of empty plastic paint containers?
+    answer: Empty paint containers should be cleaned of residue as thoroughly as possible and placed in the dry waste or plastic waste stream, where collection infrastructure exists. In areas with paint retailer take-back programmes, containers should be returned at point-of-sale. Contaminated containers with wet paint residue should not be placed in recycling streams as they will be rejected.
+---
+
 # Are Plastic Paint Containers Recyclable? What Manufacturers Need to Know
 
 **Yes, plastic paint containers made from PPCP or HDPE (resin codes #5 and #2 respectively) are technically recyclable, but their actual recyclability in India depends on how clean they are when discarded, your state's waste collection infrastructure, and your compliance obligations under the Plastic Waste Management Rules and Extended Producer Responsibility (EPR) framework.**
@@ -62,17 +81,3 @@ Explore our [PPCP paint container range →](https://www.svspolymerinds.com/prod
 [Request a Quote →](https://www.svspolymerinds.com/contact)
 
 ---
-
-## Frequently Asked Questions
-
-**Q1. What resin code do PPCP paint containers carry?**
-PPCP containers carry resin identification code **#5 (PP)**. This code is moulded into the base of the container and indicates the material is polypropylene. It does not guarantee collection or recycling — that depends on local infrastructure and contamination level.
-
-**Q2. Do paint manufacturers in India have EPR obligations for plastic containers?**
-Yes. Under the Plastic Waste Management (Amendment) Rules 2022, any producer, importer, or brand owner placing plastic packaging into the Indian market is required to register with CPCB and meet annual EPR collection and recycling targets. Paint containers — being single-use plastic packaging — are covered under this framework.
-
-**Q3. Can post-consumer recycled (PCR) PP be used in new paint containers?**
-Yes, PCR PP (post-consumer recycled polypropylene) can be blended into new containers at various percentages for non-food applications like paint and lubricant containers. Typical inclusion rates are 20–30% PCR without significant performance compromise. Using PCR content also generates additional EPR credits toward your CPCB obligations.
-
-**Q4. How should consumers dispose of empty plastic paint containers?**
-Empty paint containers should be cleaned of residue as thoroughly as possible and placed in the dry waste or plastic waste stream, where collection infrastructure exists. In areas with paint retailer take-back programmes, containers should be returned at point-of-sale. Contaminated containers with wet paint residue should not be placed in recycling streams as they will be rejected.

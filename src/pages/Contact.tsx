@@ -10,6 +10,7 @@ import { Mail, Phone, MapPin, Loader2, CheckCircle } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import { ScrollAnimation } from '@/components/ui/scroll-animation';
 import PageHeader from '@/components/ui/page-header';
+import { contact } from '@/data/pageContent';
 
 const WEB3FORMS_KEY = import.meta.env.VITE_WEB3FORMS_KEY as string | undefined;
 
@@ -75,7 +76,7 @@ const Contact = () => {
     <div className="min-h-screen bg-background">
       <Header />
       <main className="">
-        <PageHeader title="Get in Touch" subtitle="Reach out with your enquiry and we'll respond promptly." />
+        <PageHeader title={contact.heroTitle} subtitle={contact.heroSubtitle} />
 
         {/* Contact Section */}
         <section className="py-12">
@@ -192,8 +193,8 @@ const Contact = () => {
                         </CardTitle>
                       </CardHeader>
                       <CardContent>
-                        <p className="font-medium">Venkata Ramana B.</p>
-                        <p>+91 96526 96819</p>
+                        <p className="font-medium">{contact.contactPersonName}</p>
+                        <p>{contact.phone}</p>
                       </CardContent>
                     </Card>
                   </ScrollAnimation>
@@ -207,7 +208,7 @@ const Contact = () => {
                         </CardTitle>
                       </CardHeader>
                       <CardContent>
-                        <p>svspolymerinds@gmail.com</p>
+                        <p>{contact.email}</p>
                       </CardContent>
                     </Card>
                   </ScrollAnimation>
@@ -222,10 +223,12 @@ const Contact = () => {
                       </CardHeader>
                       <CardContent>
                         <p>
-                          SVS Polymer Industries<br />
-                          Plot No. 156 &amp; 157, Navodaya Society I.E.<br />
-                          Phase-V, IDA, Cherlapally<br />
-                          Hyderabad – 500 051
+                          {contact.addressLines.map((line, index) => (
+                            <span key={index}>
+                              {line}
+                              {index < contact.addressLines.length - 1 && <br />}
+                            </span>
+                          ))}
                         </p>
                       </CardContent>
                     </Card>
@@ -245,7 +248,7 @@ const Contact = () => {
             </h2>
             <div className="max-w-6xl mx-auto rounded-lg overflow-hidden shadow-large">
               <iframe
-                src="https://maps.google.com/maps?q=17.456239,78.6008444&output=embed&z=17"
+                src={contact.mapEmbedUrl}
                 width="100%"
                 height="450"
                 style={{ border: 0 }}
